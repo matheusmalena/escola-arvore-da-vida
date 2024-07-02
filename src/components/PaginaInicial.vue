@@ -1,5 +1,5 @@
 <template>
-  <section class="card-matriculas w-100">
+  <section class="card-matriculas">
     <div class="d-flex flex-column justify-content-center align-items-center w-50">
         <h2>Matrículas Abertas</h2>
         <p>Sua criança brilha no seu próprio aprendizado, com o apoio de professores que facilitam uma jornada sem limites. Juntos, vamos explorar, descobrir e crescer!</p>
@@ -7,7 +7,27 @@
             <span><font-awesome-icon :icon="['fab', 'whatsapp']" class="icone-whatsapp"/></span> Matricule seu filho</a>
     </div>
     <div class="div-imagem w-25">
-        <img src="" alt="">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="../assets/foto01.jpg" class="d-block w-50" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="../assets/foto-2.jpg" class="d-block w-50" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="../assets/foto03.jpg" class="d-block w-50" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
     </div>
   </section>
 </template>
@@ -19,6 +39,11 @@ export default {
 </script>
 
 <style scoped>
+
+.card-matriculas{
+    display: flex;
+    flex-direction: row;
+}
 
 .card-matriculas h2 {
     color: var(--laranja);

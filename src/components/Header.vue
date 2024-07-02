@@ -13,7 +13,7 @@
         </ul>
         </div>
         <div>
-            <button> <a href="https://wa.me/5511972216682"> Entre em contato conosco  <span><font-awesome-icon :icon="['fab', 'whatsapp']" class="icone-whatsapp"/></span> </a></button>
+            <a href="https://wa.me/5511972216682" class="botao-entrar-em-contato"> Entre em contato conosco  <span><font-awesome-icon :icon="['fab', 'whatsapp']" class="icone-whatsapp"/></span> </a>
         </div>
     </nav>
     
@@ -58,10 +58,12 @@
         text-decoration: none;
     }
 
-    nav button{
+    .botao-entrar-em-contato{
         background-color: var(--branco);
         border: 1px solid var(--branco);
         border-radius: 6rem;
+        text-decoration: none;
+        color: var(--preto);
         padding: 0.8rem;
         display: flex;
         justify-content: center;
@@ -69,15 +71,15 @@
         gap: 0.6rem;
     }
 
-    nav button a{
-       text-decoration: none;
-       color: var(--preto);
-       display: flex;
+    .botao-entrar-em-contato:hover{
+        background-color: #ffffffc9;
+        border: 1px solid #ffffffc9;
+        border-radius: 6rem;
+        padding: 0.8rem;
+        display: flex;
         justify-content: center;
         align-items: center;
         gap: 0.6rem;
-
     }
-
   </style>
   

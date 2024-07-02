@@ -1,7 +1,7 @@
 <template>
     <nav>
         <div>
-            <img src="../assets/logo-sem-fundo.png" alt="">
+            <img src="../assets/logo.jpg" alt="">
         </div>
         <div>
             <ul>
@@ -13,7 +13,7 @@
         </ul>
         </div>
         <div>
-            <button>Fale conosco</button>
+            <button> <a href="https://wa.me/5511972216682"> Entre em contato conosco  <span><font-awesome-icon :icon="['fab', 'whatsapp']" class="icone-whatsapp"/></span> </a></button>
         </div>
     </nav>
     
@@ -23,9 +23,6 @@
   export default {
     // eslint-disable-next-line vue/multi-word-component-names
     name: 'Header',
-    props: {
-      msg: String
-    }
   }
   </script>
   
@@ -46,13 +43,40 @@
     nav ul{
         display: flex;
         flex-direction: row;
+        gap: 3rem;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    nav ul li a{
+        color: var(--branco);
+        text-decoration: none;
+    }
+
+    nav ul li a:hover{
+        color: var(--laranja-claro);
+        text-decoration: none;
     }
 
     nav button{
         background-color: var(--branco);
         border: 1px solid var(--branco);
-        border-radius: 10px;
-        padding: 0.6rem;
+        border-radius: 6rem;
+        padding: 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    nav button a{
+       text-decoration: none;
+       color: var(--preto);
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.6rem;
+
     }
 
   </style>

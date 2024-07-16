@@ -1,17 +1,32 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import '../src/css/index.css';
+import '../src/css/responsive.css';
+import 'swiper/swiper-bundle.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 // Importar os componentes necessários do Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
-// Adicionar o ícone do WhatsApp ao library
+// Inicializar AOS
+AOS.init({
+  duration: 1000,
+  offset: 200,
+  once: true
+});
+
+// Adicionar o ícone do WhatsApp à library
 library.add(faWhatsapp);
 
 // Criar o app Vue e montar o componente principal
 const app = createApp(App);
-app.component('font-awesome-icon', FontAwesomeIcon); // Registrar o componente globalmente
 
+// Registrar o componente FontAwesomeIcon globalmente
+app.component('font-awesome-icon', FontAwesomeIcon);
+
+// Montar o aplicativo Vue no elemento com id 'app' no seu HTML
 app.mount('#app');

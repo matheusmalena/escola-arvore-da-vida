@@ -1,17 +1,20 @@
 <template>
   <Header/>
   <PaginaInicial></PaginaInicial>
+  <Footer></Footer>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import PaginaInicial from './components/PaginaInicial.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
     PaginaInicial,
+    Footer,
   }
 }
 </script>
@@ -29,12 +32,25 @@ export default {
 }
 
 :root {
-  --verde-escuro: #0c4f3d;
-  --branco: #fff;
-  --preto: #0f0f0f;
-  --verde-claro: #6c9087;
-  --verde-suave: #a8e2d4;
-  --laranja: #fa7015;
-  --laranja-claro: #ffa263;
+  --first-color: #0c4f3d;
+  --color-orange-light: #fc7e2b;
+  --color-black: rgb(27, 14, 14);
+  --clean-white-purple: #fc7e2b;
+  --text-color-light: rgb(134, 122, 159);
+  --scroll-thumb-color: rgb(161, 151, 180);
+  --scroll-bar-color: rgb(188, 181, 201);
+  --clean-light-gray: #efefef;
+  --color-clean-white: rgb(241, 239, 239);
+  --color-light-green: #6c9087;
+  --color-white: rgb(255, 255, 255);
+  --color-black-clean: rgb(33, 33, 33);
+  --orange: #fc7e2b;
+  --yellow: #ffca37;
+  --light-green: #24745eef;
+  --light-orange: #ff7c24bd;
+  --orange-full: #ff6b09;
+  --poppins: "Poppins", sans-serif;
+  --baloo: "Baloo 2", sans-serif;
 }
+
 </style>

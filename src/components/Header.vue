@@ -1,85 +1,173 @@
 <template>
-    <nav>
-        <div>
-            <img src="../assets/logo.jpg" alt="">
-        </div>
-        <div>
-            <ul>
-            <li><a href="#sobre">Sobre Nós</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#extracurricular">Atividades</a></li>
-            <li><a href="#estrutura">Estrutura</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-        </div>
-        <div>
-            <a href="https://wa.me/5511972216682" class="botao-entrar-em-contato"> Entre em contato conosco  <span><font-awesome-icon :icon="['fab', 'whatsapp']" class="icone-whatsapp"/></span> </a>
-        </div>
+  <header class="header-content" :class="{ sticky: isSticky }">
+    <!--- MENU NAVBAR --->
+    <nav class="nav-bar">
+      <div class="logo">
+        <a href="#"><img class="logo" src="../assets/logo.jpg" alt=""></a>
+      </div>
+
+      <ul id="menu" class="menu">
+        <li>
+          <a href="#turmas">Turmas</a>
+          <ul class="submenu">
+            <li><a href="./baby.html">Baby</a></li>
+            <li><a href="#turmas2">Educação Infantil</a></li>
+            <li><a href="#turmas2">Ensino Fundamental I</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#extracurricular">Atividades</a>
+          <ul class="submenu">
+            <li><a href="#atividade1">Ballet</a></li>
+            <li><a href="#atividade2">Judo</a></li>
+            <li><a href="#atividade2">Futebol</a></li>
+            <li><a href="#atividade2">Passeios e visitações</a></li>
+            <li><a href="#atividade2">Festas temáticas</a></li>
+          </ul>
+        </li>
+        <li><a href="#about">Sobre Nós</a></li>
+        <li><a href="#estrutura">Estrutura</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+
+      <!-- icon menu responsive -->
+      <div class="menu-btn" @click="toggleMenu">
+        <i class="fa fa-bars" :class="{ active: isMenuActive }"></i>
+      </div>
+      <div>
+        <a target="_blank" href="https://wa.me/5511972216682" class="botao-entrar-em-contato">
+          Entre em contato conosco <font-awesome-icon :icon="['fab', 'whatsapp']" />
+        </a>
+      </div>
     </nav>
-    
-  </template>
-  
-  <script>
-  export default {
-    // eslint-disable-next-line vue/multi-word-component-names
-    name: 'Header',
-  }
-  </script>
-  
-  <style scoped>
-    nav{
-        background-color: var(--verde-escuro);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
+  </header>
+</template>
 
-    nav img {
-        width: 150px;
-        height: auto;
-    }
+<script>
+export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: 'Header',
+  data() {
+    return {
+      isSticky: false,
+      isMenuActive: false,
+    };
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+    this.adjustFirstSectionPadding(); // Chama a função para ajustar o padding inicial
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    adjustFirstSectionPadding() {
+      const navBar = document.querySelector('.nav-bar');
+      const firstSection = document.querySelector('.first-section');
+      if (navBar && firstSection) {
+        const navBarHeight = navBar.offsetHeight;
+        firstSection.style.paddingTop = `${navBarHeight + 20}px`; // Adiciona 20px de margem extra
+      }
+    },
+    toggleMenu() {
+      this.isMenuActive = !this.isMenuActive;
+    },
+    handleScroll() {
+      const navBar = document.querySelector('.nav-bar');
+      if (navBar) {
+        this.isSticky = window.scrollY > 20;
+        if (this.isSticky) {
+          navBar.classList.add('sticky');
+        } else {
+          navBar.classList.remove('sticky');
+        }
+      }
+    },
+  },
+};
+</script>
 
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        gap: 3rem;
-        text-decoration: none;
-        list-style-type: none;
-    }
+<style>
+/* Estilos */
+.nav-bar {
+  position: fixed;
+  background: var(--first-color);
+  width: 100%;
+  padding: 30px 0;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000; /* Ajuste o z-index para garantir que o nav-bar esteja sobre outros elementos */
+}
 
-    nav ul li a{
-        color: var(--branco);
-        text-decoration: none;
-    }
+.nav-bar.sticky {
+  padding: 15px 0;
+  background: var(--first-color);
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
 
-    nav ul li a:hover{
-        color: var(--laranja-claro);
-        text-decoration: none;
-    }
+.menu-btn {
+  color: var(--color-white);
+  font-size: 23px;
+  cursor: pointer;
+}
 
-    .botao-entrar-em-contato{
-        background-color: var(--branco);
-        border: 1px solid var(--branco);
-        border-radius: 6rem;
-        text-decoration: none;
-        color: var(--preto);
-        padding: 0.8rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.6rem;
-    }
+.menu-btn i.active {
+  color: var(--orange); /* Cor quando ativo */
+}
 
-    .botao-entrar-em-contato:hover{
-        background-color: #ffffffc9;
-        border: 1px solid #ffffffc9;
-        border-radius: 6rem;
-        padding: 0.8rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.6rem;
-    }
-  </style>
-  
+.menu .submenu {
+  display: none;
+  position: absolute;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-white);
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: var(--orange);
+}
+
+.submenu li {
+  padding: 10px 20px;
+}
+
+.submenu li a {
+  color: var(--color-black) !important;
+  text-decoration: none;
+  font-size: 14px !important;
+  margin: 0 !important;
+}
+
+.submenu li a:hover {
+  color: var(--color-orange-light) !important;
+  text-decoration: none;
+  font-size: 14px !important;
+  margin: 0 !important;
+}
+</style>

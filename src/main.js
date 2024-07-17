@@ -1,5 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
+import InstagramFeed from 'vue3-instagram-feed';
+import 'vue3-instagram-feed/dist/style.css';
 import '../src/css/index.css';
 import '../src/css/responsive.css';
 import 'swiper/swiper-bundle.css';
@@ -22,8 +24,11 @@ AOS.init({
 // Adicionar o ícone do WhatsApp à library
 library.add(faWhatsapp);
 
-// Criar o app Vue e montar o componente principal
+// Criar o app Vue
 const app = createApp(App);
+
+// Usar o plugin InstagramFeed
+app.use(InstagramFeed);
 
 // Registrar o componente FontAwesomeIcon globalmente
 app.component('font-awesome-icon', FontAwesomeIcon);

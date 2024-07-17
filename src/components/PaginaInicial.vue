@@ -415,11 +415,17 @@
       </div>
     </section>
 
-    <section class="instagram-feed" id="instagram-feed"></section>
+    <!-- <section class="instagram-feed" id="instagram-feed"></section>
     <div class="spinner-border text-primary" role="status" id="loading-spinner">
       <span class="sr-only">Loading...</span>
     </div>
-    <button class="load-more" id="load-more">Carregar Mais</button>
+    <button class="load-more" id="load-more">Carregar Mais</button> -->
+    <InstagramFeed
+    :count="12"
+     :accessToken="accessToken"
+    :pagination="true"
+    :caption="true"
+  />
 
     <!--- CONTACT SECTION --->
     <section
@@ -509,22 +515,27 @@
 </template>
 
 <script>
-  import { Swiper, SwiperSlide } from 'swiper/vue';
-  import 'swiper/css';
-  import { Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import { Autoplay } from 'swiper';
 
-  export default {
-    name: "PaginaInicial",
-    components: {
-      Swiper,
-      SwiperSlide,
-    },
-    setup() {
-      return {
-        modules: [Autoplay],
-      };
-    },
-  };
+export default {
+  name: "PaginaInicial",
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  data() {
+    return {
+      accessToken: process.env.VUE_APP_INSTAGRAM_ACCESS_TOKEN,
+    }
+  },
+  setup() {
+    return {
+      modules: [Autoplay],
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -537,5 +548,30 @@
 .swiper-slide img {
   width: 100%;
   height: auto;
+}
+
+.instagram-wrapper, .instagram-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  background-color: var(--clean-light-gray);
+}
+
+.instagram-gallery-item {
+  position: relative;
+  width: 298.4px !important;
+  height: 298.4px !important;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: left;
+}
+.instagram-gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 </style>

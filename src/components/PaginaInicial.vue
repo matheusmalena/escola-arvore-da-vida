@@ -267,8 +267,8 @@
       </div>
     </section>
 
-    <!--- PROJECTS SECTION --->
-    <section
+    
+    <!-- <section
       class="portfolio section"
       id="projects"
       aria-label="uma seção mostrando os principais projetos do meu Github."
@@ -277,7 +277,7 @@
         <h2 class="title">Projetos</h2>
         <div class="portfolio-container swiper mySwiper">
           <div class="swiper-wrapper">
-            <!-- project 01 -->
+            
             <div class="portfolio-content swiper-slide">
               <img src="" class="portfolio-img" alt="projeto lista de tarefas" />
               <div>
@@ -295,7 +295,7 @@
               </div>
             </div>
 
-            <!-- project 02 -->
+            
             <div class="portfolio-content swiper-slide">
               <img src="" class="portfolio-img" alt="projeto yoga website" />
               <div>
@@ -313,7 +313,7 @@
               </div>
             </div>
 
-            <!-- project 03 -->
+            
             <div class="portfolio-content swiper-slide">
               <img src="" class="portfolio-img" alt="card light/dark mode" />
               <div>
@@ -331,7 +331,7 @@
               </div>
             </div>
 
-            <!-- project 04 -->
+            
             <div class="portfolio-content swiper-slide">
               <img src="" class="portfolio-img" alt="card light/dark mode" />
               <div>
@@ -349,7 +349,7 @@
               </div>
             </div>
 
-            <!-- project 05 -->
+            
             <div class="portfolio-content swiper-slide">
               <img src="" class="portfolio-img" alt="card light/dark mode" />
               <div>
@@ -368,14 +368,14 @@
           </div>
 
           <div class="swiper-button-next">
-            <!-- <i class="uil uil-angle-right-b swiper-portfolio-icon"></i> -->
+            
           </div>
           <div class="swiper-button-prev">
-            <!-- <i class="uil uil-angle-left-b swiper-portfolio-icon"></i> -->
+            
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- <section class="instagram-feed" id="instagram-feed"></section>
     <div class="spinner-border text-primary" role="status" id="loading-spinner">

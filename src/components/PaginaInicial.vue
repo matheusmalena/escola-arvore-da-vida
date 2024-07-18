@@ -538,7 +538,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 /* Estilos opcionais para o componente Vue */
 .swiper-container {
   width: 100%;
@@ -550,28 +550,32 @@ export default {
   height: auto;
 }
 
-.instagram-wrapper, .instagram-wrapper {
+.instagram-wrapper {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 5px !important;
+  justify-content: center !important;
+  background-color: var(--clean-light-gray) !important;
+}
+.instagram-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
-  justify-content: center;
-  background-color: var(--clean-light-gray);
+  margin: -1rem, -1rem;
+  padding-bottom: 3rem;
 }
-
 .instagram-gallery-item {
   position: relative;
   width: 298.4px !important;
   height: 298.4px !important;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-  text-align: left;
+  border: 1px solid #ddd !important;
+  border-radius: 5px !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  transition: transform 0.3s !important;
 }
 .instagram-gallery-image {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

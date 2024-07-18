@@ -382,12 +382,14 @@
       <span class="sr-only">Loading...</span>
     </div>
     <button class="load-more" id="load-more">Carregar Mais</button> -->
-      <InstagramFeed
-        :count="12"
-        :accessToken="accessToken"
-        :pagination="true"
-        :caption="true"
-      />
+    <div class="instagram-wrapper">
+    <InstagramFeed
+      :count="12"
+      :accessToken="accessToken"
+      :pagination="true"
+      :caption="true"
+    />
+  </div>
 
     <!--- CONTACT SECTION --->
     <section
@@ -547,6 +549,29 @@ export default {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
+  transition: opacity 0.3s !important;
+}
+
+.instagram-gallery-item:hover .instagram-gallery-image {
+  opacity: 0.6 !important;
+}
+
+.instagram-gallery-item::after {
+  content: '\f16d'; /* Unicode do ícone do Instagram no FontAwesome */
+  font-family: 'Font Awesome 5 Brands';
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  font-size: 3rem !important;
+  color: white !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s !important;
+  pointer-events: none !important; /* Evita interferir no hover */
+}
+
+.instagram-gallery-item:hover::after {
+  opacity: 1 !important;
 }
 
 button {

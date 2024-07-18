@@ -193,44 +193,6 @@
       </div>
     </section>
 
-    <!--- SKILLS SECTION --->
-    <section
-      class="skills"
-      id="skills"
-      aria-label="uma seção falando das minhas habilidades e estudos até o momento."
-    >
-      <div class="max-width" data-aos="fade-down">
-        <h2 class="title">Habilidades</h2>
-
-        <div class="skills-content">
-          <div class="column left">
-            <div class="text">Minhas habilidades criativas e experiências</div>
-            <p>
-              Gostaria de compartilhar aqui sobre minha trajetória nos estudos da
-              programação até o momento. Embora eu ainda não tenha experiência
-              profissional, tenho me dedicado diariamente para aprimorar minhas
-              habilidades e conhecimentos na área de Desenvolvimento Full-Stack, na qual
-              almejo me especializar.
-              <br />
-              Comecei meus estudos no Front-end, que é a parte visual e interativa dos
-              sites. Estou me aprofundando cada dia mais em tecnologias como HTML, CSS e
-              JavaScript, e atualmente iniciei meus estudos em React. Além disso, estou
-              mergulhando no universo do Front-end e explorando Banco de Dados, que faz
-              parte do Back-end, área que comecei estudar na Faculdade.
-              <br />
-              Estou gostando bastante de poder conhecer aos poucos como funciona por trás
-              de tudo e suas tecnologias. Desde então, meu objetivo é continuar evoluindo
-              e aprendendo cada dia mais que a área do Desenvolvimento Web oferece, para
-              poder colocar meus conhecimentos em prática e continuar aprendendo ainda
-              mais com projetos reais, visando contribuir no mercado de trabalho.
-            </p>
-          </div>
-
-          <div class="column right"></div>
-        </div>
-      </div>
-    </section>
-
     <!--- CERTIFICATES SECTION --->
     <section
       class="conquest section"

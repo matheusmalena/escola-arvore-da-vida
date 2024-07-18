@@ -5,8 +5,6 @@ node_modules
 .env.local
 .env.*.local
 .env
-dist\js\app.036fe8c3.js
-app.036fe8c3.js
 
 # Log files
 npm-debug.log*

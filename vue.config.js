@@ -30,7 +30,7 @@ module.exports = defineConfig({
   },
   pluginOptions: {
     env: {
-      VITE_INSTAGRAM_ACCESS_TOKEN: process.env.VITE_INSTAGRAM_ACCESS_TOKEN
+      VUE_APP_INSTAGRAM_ACCESS_TOKEN: process.env.VUE_APP_INSTAGRAM_ACCESS_TOKEN
     }
   }
 });

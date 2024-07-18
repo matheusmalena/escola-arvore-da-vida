@@ -420,12 +420,12 @@
       <span class="sr-only">Loading...</span>
     </div>
     <button class="load-more" id="load-more">Carregar Mais</button> -->
-    <InstagramFeed
-    :count="12"
-     :accessToken="accessToken"
-    :pagination="true"
-    :caption="true"
-  />
+      <InstagramFeed
+        :count="12"
+        :accessToken="accessToken"
+        :pagination="true"
+        :caption="true"
+      />
 
     <!--- CONTACT SECTION --->
     <section
@@ -551,21 +551,28 @@ export default {
 }
 
 .instagram-wrapper {
+  max-width: 100% !important;
   display: flex !important;
   flex-wrap: wrap !important;
-  gap: 5px !important;
+  gap: 1px !important;
+  align-items: center !important;
   justify-content: center !important;
   background-color: var(--clean-light-gray) !important;
+  padding: 1rem 0 !important;
 }
+
 .instagram-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -1rem, -1rem;
-  padding-bottom: 3rem;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin: -1rem -1rem !important;
+  padding-bottom: 3rem !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
+
 .instagram-gallery-item {
-  position: relative;
-  width: 298.4px !important;
+  position: relative !important;
+  flex: 0 0 298.4px !important;
   height: 298.4px !important;
   border: 1px solid #ddd !important;
   border-radius: 5px !important;
@@ -573,9 +580,20 @@ export default {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
   transition: transform 0.3s !important;
 }
+
 .instagram-gallery-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
 }
+
+button {
+  background-color: var(--orange);
+  padding: 0.5rem !important;
+  font-family: var(--poppins);
+  margin: 0.5rem !important;
+  border: 1px solid var(--orange);
+  border-radius: 8px !important;
+}
+
 </style>

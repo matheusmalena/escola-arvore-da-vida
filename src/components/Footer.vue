@@ -1,45 +1,72 @@
 <template>
-    <!--- FOOTER --->
-    <footer class="footer">
-        <div class="content-footer">
-            <div>
-                <img src="../assets/logo-sem-fundo.png" alt="">
-            </div>
-            <div class="responsive-icons">
-                <div class="redes-footer">
-                    <a target="_blank" href=""> <font-awesome-icon :icon="['fab', 'instagram']"><span>Instagram</span></font-awesome-icon></a>
-                    <a target="_blank" href=""> <font-awesome-icon :icon="['fas', 'phone']"><span>Telefone</span></font-awesome-icon></a>
-                    <a target="_blank" href=""> <font-awesome-icon :icon="['fab', 'facebook']"><span>Facebook</span></font-awesome-icon></a>
-                </div>
-            </div>
-            <div class="container-footer">
-                <p>&copy; Centro Educacional Arvore da Vida - 2024 Todos os direitos reservados. By <a target="_blank"
-                        href="https://www.instagram.com/dev_malena/"> Matheus Malena </a></p>
-                <ul>
-                    <li><a target="_blank" href="#">Política de Privacidade</a></li>
-                    <li><a target="_blank" href="#">Termos de Uso</a></li>
-                    <li><a target="_blank" href="#">Contato</a></li>
-                </ul>
-            </div>
-            <div class="redes-footer">
-                <a target="_blank" href=""> <font-awesome-icon :icon="['fab', 'instagram']"><span>Instagram</span></font-awesome-icon></a>
-                <a target="_blank" href=""> <font-awesome-icon :icon="['fas', 'phone']"><span>Telefone</span></font-awesome-icon></a>
-                <a target="_blank" href=""> <font-awesome-icon :icon="['fab', 'facebook']"><span>Facebook</span></font-awesome-icon></a>
-            </div>
+  <!--- FOOTER --->
+  <footer class="footer">
+    <div class="content-footer">
+      <div>
+        <img src="../assets/logo-sem-fundo.png" alt="" />
+      </div>
+      <div class="responsive-icons">
+        <div class="redes-footer">
+          <a target="_blank" href="">
+            <font-awesome-icon :icon="['fab', 'instagram']"
+              ><span>Instagram</span></font-awesome-icon
+            ></a
+          >
+          <a target="_blank" href="">
+            <font-awesome-icon :icon="['fas', 'phone']"
+              ><span>Telefone</span></font-awesome-icon
+            ></a
+          >
+          <a target="_blank" href="">
+            <font-awesome-icon :icon="['fab', 'facebook']"
+              ><span>Facebook</span></font-awesome-icon
+            ></a
+          >
         </div>
-    </footer>
+      </div>
+      <div class="container-footer">
+        <p>
+          &copy; Centro Educacional Arvore da Vida - 2024 Todos os direitos reservados. By
+          <a target="_blank" href="https://www.instagram.com/dev_malena/">
+            Matheus Malena
+          </a>
+        </p>
+        <ul>
+          <li><a target="_blank" href="#">Política de Privacidade</a></li>
+          <li><a target="_blank" href="#">Termos de Uso</a></li>
+          <li><a target="_blank" href="#">Contato</a></li>
+        </ul>
+      </div>
+      <div class="redes-footer">
+        <a target="_blank" href="">
+          <font-awesome-icon :icon="['fab', 'instagram']"
+            ><span>Instagram</span></font-awesome-icon
+          ></a
+        >
+        <a target="_blank" href="">
+          <font-awesome-icon :icon="['fas', 'phone']"
+            ><span>Telefone</span></font-awesome-icon
+          ></a
+        >
+        <a target="_blank" href="">
+          <font-awesome-icon :icon="['fab', 'facebook']"
+            ><span>Facebook</span></font-awesome-icon
+          ></a
+        >
+      </div>
+    </div>
+  </footer>
 </template>
-  
-  <script>
-  
-  export default {
-    // eslint-disable-next-line vue/multi-word-component-names
-    name: 'Footer',
-  };
-  </script>
 
-  <style scoped>
-  /* ============= FOOTER ============= */
+<script>
+export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Footer",
+};
+</script>
+
+<style scoped>
+/* ============= FOOTER ============= */
 .footer {
   background: var(--color-black-clean);
   padding: 17px 23px;
@@ -131,7 +158,7 @@ footer img {
   padding: 0 0 0 0.5rem;
 }
 
-.content-footer{
+.content-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -139,6 +166,6 @@ footer img {
 }
 
 .responsive-icons {
- display: none;
+  display: none;
 }
-  </style>
+</style>

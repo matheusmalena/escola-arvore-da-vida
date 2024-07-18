@@ -234,7 +234,7 @@
     .container-footer {
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: column !important;
         align-items: center;
     }
 

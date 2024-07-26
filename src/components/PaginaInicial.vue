@@ -114,6 +114,15 @@
       <h2>7 anos transformando vidas através da educação</h2>
     </div>
 
+    <section class="proposta">
+    <div class="proposta-card">
+      <h2>Proposta <span>Pedagógica</span> </h2>
+      <p>Nossa proposta visa formar alunos com as competências necessárias para o mundo atual, por meio de atividades de experimentação, suporte teórico do professor e o uso de tecnologias a favor da aprendizagem.</p>
+      <span>Aqui o aluno é o protagonista do seu aprendizado; o professor, o mediador e a aprendizagem é sem limites.
+        Para uma nova geração, uma nova proposta de educação.</span>
+    </div>
+  </section>
+
     <!-- SERVICES SECTION -->
     <section
       class="services section"
@@ -123,8 +132,8 @@
       <!-- <div id="particles-js"></div> -->
       <div class="max-width">
         <div data-aos="fade-down">
-          <h2 class="title">Atividade Extracurricular</h2>
-          <p class="text-center">
+          <h2>Atividades <span>Extracurriculares</span></h2>
+          <!-- <p class="text-center">
             Com o objetivo de melhorar a formação do aluno, o estabelecimento de ensino
             Escola Árvore da Vida oferece atividades extracurriculares para despertar o
             talento dos estudantes, aprimorando o desempenho em sala de aula. O trabalho
@@ -134,7 +143,7 @@
             proporcionando lições como: autonomia, tolerância, respeito, e o
             reconhecimento de ponto de vista de outras pessoas. Confira algumas das
             práticas interdisciplinares mais comuns que são oferecidas na escola:
-          </p>
+          </p> -->
         </div>
         <div class="serv-content" data-aos="zoom-in-up">
           <div class="card" style="width: 18rem">
@@ -369,11 +378,8 @@
       </div>
     </section> -->
 
-    <!-- <section class="instagram-feed" id="instagram-feed"></section>
-    <div class="spinner-border text-primary" role="status" id="loading-spinner">
-      <span class="sr-only">Loading...</span>
-    </div>
-    <button class="load-more" id="load-more">Carregar Mais</button> -->
+    <section class="instagram">
+      <h2>Siga nossa página no <span>Instagram</span> </h2>
     <div class="instagram-wrapper">
     <InstagramFeed
       :count="12"
@@ -382,6 +388,7 @@
       :caption="true"
     />
   </div>
+</section>
 
     <!--- CONTACT SECTION --->
     <section

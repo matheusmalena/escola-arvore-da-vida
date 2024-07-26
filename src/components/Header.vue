@@ -8,26 +8,26 @@
 
       <ul id="menu" class="menu">
         <li>
-          <a href="#turmas">Turmas</a>
+          <a href="#turmas" @click="handleMenuClick">Turmas</a>
           <ul class="submenu">
-            <li><a href="./baby.html">Baby</a></li>
-            <li><a href="#turmas2">Educação Infantil</a></li>
-            <li><a href="#turmas2">Ensino Fundamental I</a></li>
+            <li><a href="./baby.html" @click="handleMenuClick">Baby</a></li>
+            <li><a href="#turmas2" @click="handleMenuClick">Educação Infantil</a></li>
+            <li><a href="#turmas2" @click="handleMenuClick">Ensino Fundamental I</a></li>
           </ul>
         </li>
         <li>
-          <a href="#extracurricular">Atividades</a>
+          <a href="#extracurricular" @click="handleMenuClick">Atividades</a>
           <ul class="submenu">
-            <li><a href="#atividade1">Ballet</a></li>
-            <li><a href="#atividade2">Judo</a></li>
-            <li><a href="#atividade2">Futebol</a></li>
-            <li><a href="#atividade2">Passeios e visitações</a></li>
-            <li><a href="#atividade2">Festas temáticas</a></li>
+            <li><a href="#atividade1" @click="handleMenuClick">Ballet</a></li>
+            <li><a href="#atividade2" @click="handleMenuClick">Judo</a></li>
+            <li><a href="#atividade2" @click="handleMenuClick">Futebol</a></li>
+            <li><a href="#atividade2" @click="handleMenuClick">Passeios e visitações</a></li>
+            <li><a href="#atividade2" @click="handleMenuClick">Festas temáticas</a></li>
           </ul>
         </li>
-        <li><a href="#about">Sobre Nós</a></li>
-        <li><a href="#estrutura">Estrutura</a></li>
-        <li><a href="#contact">Contato</a></li>
+        <li><a href="#about" @click="handleMenuClick">Sobre Nós</a></li>
+        <li><a href="#estrutura" @click="handleMenuClick">Estrutura</a></li>
+        <li><a href="#contact" @click="handleMenuClick">Contato</a></li>
       </ul>
 
       <!-- icon menu responsive -->
@@ -61,29 +61,40 @@ export default {
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
-    adjustFirstSectionPadding() {
-      const navBar = document.querySelector('.nav-bar');
-      const firstSection = document.querySelector('.first-section');
-      if (navBar && firstSection) {
-        const navBarHeight = navBar.offsetHeight;
-        firstSection.style.paddingTop = `${navBarHeight + 20}px`; // Adiciona 20px de margem extra
-      }
-    },
-    toggleMenu() {
-      this.isMenuActive = !this.isMenuActive;
-    },
-    handleScroll() {
-      const navBar = document.querySelector('.nav-bar');
-      if (navBar) {
-        this.isSticky = window.scrollY > 20;
-        if (this.isSticky) {
-          navBar.classList.add('sticky');
-        } else {
-          navBar.classList.remove('sticky');
-        }
-      }
-    },
+  adjustFirstSectionPadding() {
+    const navBar = document.querySelector('.nav-bar');
+    const firstSection = document.querySelector('.first-section');
+    if (navBar && firstSection) {
+      const navBarHeight = navBar.offsetHeight;
+      firstSection.style.paddingTop = `${navBarHeight + 20}px`;
+    }
   },
+  toggleMenu() {
+    this.isMenuActive = !this.isMenuActive;
+    const menu = document.getElementById('menu');
+    if (this.isMenuActive) {
+      menu.classList.add('active');
+    } else {
+      menu.classList.remove('active');
+    }
+  },
+  handleScroll() {
+    const navBar = document.querySelector('.nav-bar');
+    if (navBar) {
+      this.isSticky = window.scrollY > 20;
+      if (this.isSticky) {
+        navBar.classList.add('sticky');
+      } else {
+        navBar.classList.remove('sticky');
+      }
+    }
+  },
+  handleMenuClick() {
+      if (this.isMenuActive) {
+        this.toggleMenu();
+      }
+    },
+}
 };
 </script>
 

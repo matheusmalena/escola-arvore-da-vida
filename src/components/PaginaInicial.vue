@@ -1,14 +1,6 @@
 <template>
   <main class="main-content">
     <div class="green"></div>
-
-    <!-- <section class="w-100 p-0">
-            <div class="section-carrousel">
-                <img src="../assets/jardin-carrousel - Copia.jpg" alt="">
-            </div>
-        </section> -->
-
-    <!-- Seção inicial com carrossel -->
     <section class="first-section">
     <div class="matriculas-card">
       <h2>Matrículas Abertas</h2>
@@ -528,7 +520,6 @@ export default {
 .instagram-gallery {
   display: flex !important;
   flex-wrap: wrap !important;
-  margin: -1rem -1rem !important;
   padding-bottom: 3rem !important;
   align-items: center !important;
   justify-content: center !important;

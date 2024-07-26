@@ -238,20 +238,19 @@
         align-items: center;
     }
 
-    .responsive-icons {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
+    .responsive-icons , .redes-responsive-icons {
+        display: flex !important;
+        flex-direction: row !important;
     }
 
-    .responsive-icons a span {
-        display: none;
+    .responsive-icons .redes-responsive-icons {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 0.7rem !important;
     }
 
-    .responsive-icons .redes-footer {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
+    .responsive-icons .redes-responsive-icons a{
+        color: #fff !important;
     }
 
     .container-footer p,
@@ -265,8 +264,10 @@
       }
 
       .redes-footer{
-        display: none;
+        display: none !important;
       }
+
+     
 }
 
 @media (max-width: 690px) {

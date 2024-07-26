@@ -6,22 +6,16 @@
         <img src="../assets/logo-sem-fundo.png" alt="" />
       </div>
       <div class="responsive-icons">
-        <div class="redes-footer">
+        <div class="redes-responsive-icons">
           <a target="_blank" href="">
-            <font-awesome-icon :icon="['fab', 'instagram']"
-              ><span>Instagram</span></font-awesome-icon
-            ></a
-          >
+            <font-awesome-icon :icon="['fab', 'instagram']"></font-awesome-icon
+          ></a>
           <a target="_blank" href="">
-            <font-awesome-icon :icon="['fas', 'phone']"
-              ><span>Telefone</span></font-awesome-icon
-            ></a
-          >
+            <font-awesome-icon :icon="['fas', 'phone']"></font-awesome-icon
+          ></a>
           <a target="_blank" href="">
-            <font-awesome-icon :icon="['fab', 'facebook']"
-              ><span>Facebook</span></font-awesome-icon
-            ></a
-          >
+            <font-awesome-icon :icon="['fab', 'facebook']"></font-awesome-icon
+          ></a>
         </div>
       </div>
       <div class="container-footer">
@@ -39,19 +33,16 @@
       </div>
       <div class="redes-footer">
         <a target="_blank" href="">
-          <font-awesome-icon :icon="['fab', 'instagram']"
-            ><span>Instagram</span></font-awesome-icon
-          ></a
+          <font-awesome-icon :icon="['fab', 'instagram']"></font-awesome-icon
+          ><span>Instagram</span></a
         >
         <a target="_blank" href="">
-          <font-awesome-icon :icon="['fas', 'phone']"
-            ><span>Telefone</span></font-awesome-icon
-          ></a
+          <font-awesome-icon :icon="['fas', 'phone']"></font-awesome-icon
+          ><span>Telefone</span></a
         >
         <a target="_blank" href="">
-          <font-awesome-icon :icon="['fab', 'facebook']"
-            ><span>Facebook</span></font-awesome-icon
-          ></a
+          <font-awesome-icon :icon="['fab', 'facebook']"></font-awesome-icon
+          ><span>Facebook</span></a
         >
       </div>
     </div>
@@ -163,9 +154,5 @@ footer img {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-}
-
-.responsive-icons {
-  display: none;
 }
 </style>

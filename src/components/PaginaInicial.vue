@@ -447,7 +447,7 @@
                   <input type="text" name="nome" placeholder="Nome" required />
                 </div>
                 <div class="field number">
-                  <input type="tel" name="numero" placeholder="Número" required />
+                  <input type="tel" name="numero" placeholder="Telefone" required />
                 </div>
               </div>
               <div class="field email">

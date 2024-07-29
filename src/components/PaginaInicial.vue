@@ -268,6 +268,7 @@
       </div>
     </section>
 
+    <verseComponent/>
     
     <!-- <section
       class="portfolio section"
@@ -401,6 +402,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import { Autoplay } from 'swiper';
 import emailComponent from './emailComponent.vue';
+import verseComponent from './verseComponent.vue';
 
 export default {
   name: "PaginaInicial",
@@ -408,6 +410,7 @@ export default {
     Swiper,
     SwiperSlide,
     emailComponent,
+    verseComponent,
   },
   data() {
     return {

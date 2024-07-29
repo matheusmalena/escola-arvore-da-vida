@@ -24,8 +24,14 @@
   </script>
   
   <style>
+
+    .verse {
+      background-color: var(--color-black);
+    }
+
     .verse h2{
         margin: 0 !important;
+        color: white;
     }
     .card-verse {
       display: flex;
@@ -37,11 +43,14 @@
       display: flex;
       flex-direction: column;
       width: 70%;
+      align-items: center;
     }
 
     .verse-01 span{
+      width: 100px;
       text-align: center;
-      color: rgb(245, 44, 44);
+      color: white;
+      background-color: #cb0a1a;
       font-weight: 800;
     }
 

@@ -194,8 +194,144 @@
       </div>
     </section>
 
-    <!--- CERTIFICATES SECTION --->
+    <verseComponent/>
+
     <section
+      class="structure section"
+      id="structure"
+    >
+      <div class="max-width" data-aos="fade-down">
+        <div>
+          <h2 class="title">Nossa <span>estrutura</span></h2>
+        </div>
+        <swiper
+    :slides-per-view="1"
+    :space-between="50"
+    @swiper="onSwiper"
+    @slideChange="onSlideChange"
+  >
+    <swiper-slide><img src="../assets/quadra.jpeg" class="portfolio-img" alt="projeto lista de tarefas" />
+              <div>
+                <h3 class="portfolio-title">Quadra</h3>
+                <p class="portfolio-description">
+                  Uma página de previsão de tempo com um API integrada a OpenWeather em
+                  JavaScript.
+                </p>
+                <a
+                  href="https://matheusmalena.github.io/AppPrevisaoDoTempo/"
+                  target="_blank"
+                  class="portfolio-button"
+                >
+                  View <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
+              </div></swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide>Slide 3</swiper-slide>
+    ...
+  </swiper>
+        <!-- <div class="portfolio-container swiper mySwiper">
+          <div class="swiper-wrapper">
+            
+            <div class="portfolio-content swiper-slide">
+              <img src="../assets/quadra.jpeg" class="portfolio-img" alt="projeto lista de tarefas" />
+              <div>
+                <h3 class="portfolio-title">Quadra</h3>
+                <p class="portfolio-description">
+                  Uma página de previsão de tempo com um API integrada a OpenWeather em
+                  JavaScript.
+                </p>
+                <a
+                  href="https://matheusmalena.github.io/AppPrevisaoDoTempo/"
+                  target="_blank"
+                  class="portfolio-button"
+                >
+                  View <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
+              </div>
+            </div>
+
+            
+            <div class="portfolio-content swiper-slide">
+              <img src="../assets/playground.jpg" class="portfolio-img" alt="projeto yoga website" />
+              <div>
+                <h3 class="portfolio-title">Fokus Website</h3>
+                <p class="portfolio-description">
+                  Um sistema de temporizador, que ajuda a pessoa usuária a focar nas suas
+                  atividades do dia a dia.
+                </p>
+                <a
+                  href="https://matheusmalena.github.io/Fokus/"
+                  target="_blank"
+                  class="portfolio-button"
+                >
+                  View <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
+              </div>
+            </div>
+
+            
+            <div class="portfolio-content swiper-slide">
+              <img src="../assets/sala.jpg" class="portfolio-img" />
+              <div>
+                <h3 class="portfolio-title">Salas de aula</h3>
+                <p class="portfolio-description">
+                  Uma site para você explorar novas receitas todos os dias com os
+                  ingredientes que estão ao seu alcance!
+                </p>
+                <a
+                  href="https://cookin--up.vercel.app/"
+                  target="_blank"
+                  class="portfolio-button"
+                >
+                  View <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
+              </div>
+            </div>
+
+            
+            <div class="portfolio-content swiper-slide">
+              <img src="" class="portfolio-img" alt="card light/dark mode" />
+              <div>
+                <h3 class="portfolio-title">Jogo Advinha Número - Voz</h3>
+                <p class="portfolio-description">
+                  Um jogo onde você tem que advinhar um número secreto através de sua voz.
+                </p>
+                <a
+                  href="https://jogo-numero-secreto-voz-three.vercel.app/"
+                  target="_blank"
+                  class="portfolio-button"
+                >
+                  View
+                  <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
+              </div>
+            </div>
+
+            
+            <div class="portfolio-content swiper-slide">
+              <img src="" class="portfolio-img" alt="card light/dark mode" />
+              <div>
+                <h3 class="portfolio-title">Cafeteria - Landing Page</h3>
+                <p class="portfolio-description">
+                  Uma landing page de uma cafeteria moderna.
+                </p>
+                <a
+                  href="https://matheusmalena.github.io/landing-page_cafeteria/"
+                  target="_blank"
+                  class="portfolio-button"
+                >
+                  View <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next">
+            
+          </div>
+          <div class="swiper-button-prev">
+            
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!--- CERTIFICATES SECTION --->
+    <!-- <section
       class="conquest section"
       id="certificates"
       aria-label="uma seção mostrando os meus certificados do meu aprendizado."
@@ -266,118 +402,8 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <verseComponent/>
-    
-    <!-- <section
-      class="portfolio section"
-      id="projects"
-      aria-label="uma seção mostrando os principais projetos do meu Github."
-    >
-      <div class="max-width" data-aos="fade-down">
-        <h2 class="title">Projetos</h2>
-        <div class="portfolio-container swiper mySwiper">
-          <div class="swiper-wrapper">
-            
-            <div class="portfolio-content swiper-slide">
-              <img src="" class="portfolio-img" alt="projeto lista de tarefas" />
-              <div>
-                <h3 class="portfolio-title">Previsão do Tempo Website</h3>
-                <p class="portfolio-description">
-                  Uma página de previsão de tempo com um API integrada a OpenWeather em
-                  JavaScript.
-                </p>
-                <a
-                  href="https://matheusmalena.github.io/AppPrevisaoDoTempo/"
-                  target="_blank"
-                  class="portfolio-button"
-                >
-                  View <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
-              </div>
-            </div>
-
-            
-            <div class="portfolio-content swiper-slide">
-              <img src="" class="portfolio-img" alt="projeto yoga website" />
-              <div>
-                <h3 class="portfolio-title">Fokus Website</h3>
-                <p class="portfolio-description">
-                  Um sistema de temporizador, que ajuda a pessoa usuária a focar nas suas
-                  atividades do dia a dia.
-                </p>
-                <a
-                  href="https://matheusmalena.github.io/Fokus/"
-                  target="_blank"
-                  class="portfolio-button"
-                >
-                  View <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
-              </div>
-            </div>
-
-            
-            <div class="portfolio-content swiper-slide">
-              <img src="" class="portfolio-img" alt="card light/dark mode" />
-              <div>
-                <h3 class="portfolio-title">Cookin Up</h3>
-                <p class="portfolio-description">
-                  Uma site para você explorar novas receitas todos os dias com os
-                  ingredientes que estão ao seu alcance!
-                </p>
-                <a
-                  href="https://cookin--up.vercel.app/"
-                  target="_blank"
-                  class="portfolio-button"
-                >
-                  View <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
-              </div>
-            </div>
-
-            
-            <div class="portfolio-content swiper-slide">
-              <img src="" class="portfolio-img" alt="card light/dark mode" />
-              <div>
-                <h3 class="portfolio-title">Jogo Advinha Número - Voz</h3>
-                <p class="portfolio-description">
-                  Um jogo onde você tem que advinhar um número secreto através de sua voz.
-                </p>
-                <a
-                  href="https://jogo-numero-secreto-voz-three.vercel.app/"
-                  target="_blank"
-                  class="portfolio-button"
-                >
-                  View
-                  <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
-              </div>
-            </div>
-
-            
-            <div class="portfolio-content swiper-slide">
-              <img src="" class="portfolio-img" alt="card light/dark mode" />
-              <div>
-                <h3 class="portfolio-title">Cafeteria - Landing Page</h3>
-                <p class="portfolio-description">
-                  Uma landing page de uma cafeteria moderna.
-                </p>
-                <a
-                  href="https://matheusmalena.github.io/landing-page_cafeteria/"
-                  target="_blank"
-                  class="portfolio-button"
-                >
-                  View <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-button-next">
-            
-          </div>
-          <div class="swiper-button-prev">
-            
-          </div>
-        </div>
-      </div>
     </section> -->
+    
 
     <section class="instagram">
       <h2>Siga nossa página no <span>Instagram</span> </h2>

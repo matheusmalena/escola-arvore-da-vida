@@ -267,7 +267,7 @@ html {
   margin-top: 3rem;
 }
 
-/* .swiper-container {
+.swiper-container {
   width: 100%;
   height: 100%;
   display: flex !important;
@@ -275,8 +275,8 @@ html {
 }
 
 .swiper-slide {
-  width: 200px !important;
-  max-height: 80px;
+  width: 150px !important;
+  max-height: 100px;
   text-align: center;
   font-size: 18px;
   background: transparent;
@@ -284,15 +284,13 @@ html {
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
-} */
+}
 
-/* .swiper-slide img {
-  width: 200px;
-  As imagens ocupam 100% da largura da slide
+.swiper-slide img {
+  width: 150px;
   height: auto;
-  A altura é ajustada automaticamente para manter a proporção
   padding: 0 1rem;
-} */
+}
 
 /* ============= ABOUT SECTION/ALL SIMILIAR STYLING ============= */
 section {

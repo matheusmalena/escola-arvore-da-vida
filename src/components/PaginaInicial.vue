@@ -23,18 +23,9 @@
           }"
           class="swiper-wrapper mySwiper"
         >
-          <swiper-slide class="swiper-slide"><img src="../assets/mz01.jpg" alt="Foto 1" /></swiper-slide>
-          <swiper-slide class="swiper-slide"><img src="../assets/mz02.png" alt="Foto 2" /></swiper-slide>
-          <swiper-slide class="swiper-slide"><img src="../assets/mz04.png" alt="Foto 3" /></swiper-slide>
-          <swiper-slide class="swiper-slide"><img src="../assets/mz03.png" alt="Foto 4" /></swiper-slide>
-          <swiper-slide class="swiper-slide"><img src="../assets/mz01.jpg" alt="Foto 1" /></swiper-slide>
-          <swiper-slide class="swiper-slide"><img src="../assets/mz02.png" alt="Foto 2" /></swiper-slide>
-          <swiper-slide class="swiper-slide"><img src="../assets/mz04.png" alt="Foto 3" /></swiper-slide>
-          <swiper-slide class="swiper-slide"><img src="../assets/mz03.png" alt="Foto 4" /></swiper-slide>
-          <swiper-slide class="swiper-slide"><img src="../assets/mz01.jpg" alt="Foto 1" /></swiper-slide>
-          <swiper-slide class="swiper-slide"><img src="../assets/mz02.png" alt="Foto 2" /></swiper-slide>
-          <swiper-slide class="swiper-slide"><img src="../assets/mz04.png" alt="Foto 3" /></swiper-slide>
-          <swiper-slide class="swiper-slide"><img src="../assets/mz03.png" alt="Foto 4" /></swiper-slide>
+        <swiperSlide v-for="(image, i) in images" :key="i" class="swiper-slide">
+            <img :src="image.src" :alt="image.alt" />
+          </swiperSlide>
         </swiper>
       </div>
     </div>
@@ -441,6 +432,7 @@ export default {
   data() {
     return {
       accessToken: process.env.VUE_APP_INSTAGRAM_ACCESS_TOKEN,
+      images: this.generateImages(100),
     }
   },
   setup() {
@@ -448,6 +440,27 @@ export default {
       modules: [Autoplay],
     };
   },
+  methods: {
+  generateImages(count) {
+      const baseImages = [
+        { src: require('@/assets/google-logo.png'), alt: 'Google Logo' },
+        { src: require('@/assets/mz02.png'), alt: 'Imagem mz02' },
+        { src: require('@/assets/logo-sebrae-transparente.png'), alt: 'Logo Sebrae' },
+        { src: require('@/assets/mz04.png'), alt: 'Imagem mz04' },
+        { src: require('@/assets/logo-agendaedu.png'), alt: 'Logo Agenda Edu' },
+        { src: require('@/assets/logoprojeto.png'), alt: 'Logo Projeto' }
+      ];
+      const images = [];
+      for (let i = 0; i < count; i++) {
+        const baseImage = baseImages[i % baseImages.length];
+        images.push({
+          src: baseImage.src,
+          alt: `${baseImage.alt} ${i + 1}`
+        });
+      }
+      return images;
+    }
+  }
 };
 </script>
 

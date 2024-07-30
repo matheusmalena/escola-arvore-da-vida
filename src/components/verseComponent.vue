@@ -5,11 +5,11 @@
     >
       <div class="max-width card-verse" data-aos="fade-down">
         <div class="verse-01">
-          <h2 class="title">"E conhecereis a verdade, e a
+          <h2 class="">"E conhecereis a verdade, e a
             verdade vos libertará."</h2>
-            <span>João 8:32 </span>
+            <span class="versicule">João 8:32 </span>
         </div>
-        <div>
+        <div class="verse-02">
             <img src="../assets/logo-mkz-red.png" alt="">
         </div>
       </div>
@@ -32,11 +32,15 @@
     .verse h2{
         margin: 0 !important;
         color: white;
+        font-size: 50px;
+        font-family: var(--baloo);
+        font-weight: 800;
     }
     .card-verse {
       display: flex;
       flex-direction: row;
       align-items: center;
+      gap: 0.5rem;
     }
 
     .verse-01{
@@ -44,9 +48,10 @@
       flex-direction: column;
       width: 70%;
       align-items: center;
+      gap: 1rem;
     }
 
-    .verse-01 span{
+    .verse-01 .versicule{
       width: 100px;
       text-align: center;
       color: white;
@@ -54,8 +59,12 @@
       font-weight: 800;
     }
 
-    .card-verse img {
-      width: 250px;
+    .verse-02 {
+      width: 30%;
+    }
+
+    .verse-02 img {
+      width: 90%;
       height: auto;
     }
   </style>

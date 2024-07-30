@@ -274,7 +274,7 @@ html {
   align-items: center !important;
 }
 
-.swiper-slide {
+.swiper-slide-partners {
   width: 150px !important;
   max-height: 100px;
   text-align: center;
@@ -286,12 +286,24 @@ html {
   padding: 0 1rem;
 }
 
-.swiper-slide img {
+.swiper-slide-partners img {
   width: 150px;
   height: auto;
   padding: 0 1rem;
 }
 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.img-carrousel-estruture {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
 /* ============= ABOUT SECTION/ALL SIMILIAR STYLING ============= */
 section {
   padding: 100px 0;

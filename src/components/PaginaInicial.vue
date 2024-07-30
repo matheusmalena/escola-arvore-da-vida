@@ -23,7 +23,7 @@
           }"
           class="swiper-wrapper mySwiper"
         >
-        <swiperSlide v-for="(image, i) in images" :key="i" class="swiper-slide">
+        <swiperSlide v-for="(image, i) in images" :key="i" class="swiper-slide-partners">
             <img :src="image.src" :alt="image.alt" />
           </swiperSlide>
         </swiper>
@@ -195,129 +195,15 @@
         <div>
           <h2 class="title">Nossa <span>estrutura</span></h2>
         </div>
-        <swiper
-    :slides-per-view="1"
-    :space-between="50"
-    @swiper="onSwiper"
-    @slideChange="onSlideChange"
-  >
-    <swiper-slide><img src="../assets/quadra.jpeg" class="portfolio-img" alt="projeto lista de tarefas" />
-              <div>
-                <h3 class="portfolio-title">Quadra</h3>
-                <p class="portfolio-description">
-                  Uma página de previsão de tempo com um API integrada a OpenWeather em
-                  JavaScript.
-                </p>
-                <a
-                  href="https://matheusmalena.github.io/AppPrevisaoDoTempo/"
-                  target="_blank"
-                  class="portfolio-button"
-                >
-                  View <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
-              </div></swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    ...
-  </swiper>
-        <!-- <div class="portfolio-container swiper mySwiper">
-          <div class="swiper-wrapper">
-            
-            <div class="portfolio-content swiper-slide">
-              <img src="../assets/quadra.jpeg" class="portfolio-img" alt="projeto lista de tarefas" />
-              <div>
-                <h3 class="portfolio-title">Quadra</h3>
-                <p class="portfolio-description">
-                  Uma página de previsão de tempo com um API integrada a OpenWeather em
-                  JavaScript.
-                </p>
-                <a
-                  href="https://matheusmalena.github.io/AppPrevisaoDoTempo/"
-                  target="_blank"
-                  class="portfolio-button"
-                >
-                  View <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
-              </div>
-            </div>
-
-            
-            <div class="portfolio-content swiper-slide">
-              <img src="../assets/playground.jpg" class="portfolio-img" alt="projeto yoga website" />
-              <div>
-                <h3 class="portfolio-title">Fokus Website</h3>
-                <p class="portfolio-description">
-                  Um sistema de temporizador, que ajuda a pessoa usuária a focar nas suas
-                  atividades do dia a dia.
-                </p>
-                <a
-                  href="https://matheusmalena.github.io/Fokus/"
-                  target="_blank"
-                  class="portfolio-button"
-                >
-                  View <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
-              </div>
-            </div>
-
-            
-            <div class="portfolio-content swiper-slide">
-              <img src="../assets/sala.jpg" class="portfolio-img" />
-              <div>
-                <h3 class="portfolio-title">Salas de aula</h3>
-                <p class="portfolio-description">
-                  Uma site para você explorar novas receitas todos os dias com os
-                  ingredientes que estão ao seu alcance!
-                </p>
-                <a
-                  href="https://cookin--up.vercel.app/"
-                  target="_blank"
-                  class="portfolio-button"
-                >
-                  View <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
-              </div>
-            </div>
-
-            
-            <div class="portfolio-content swiper-slide">
-              <img src="" class="portfolio-img" alt="card light/dark mode" />
-              <div>
-                <h3 class="portfolio-title">Jogo Advinha Número - Voz</h3>
-                <p class="portfolio-description">
-                  Um jogo onde você tem que advinhar um número secreto através de sua voz.
-                </p>
-                <a
-                  href="https://jogo-numero-secreto-voz-three.vercel.app/"
-                  target="_blank"
-                  class="portfolio-button"
-                >
-                  View
-                  <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
-              </div>
-            </div>
-
-            
-            <div class="portfolio-content swiper-slide">
-              <img src="" class="portfolio-img" alt="card light/dark mode" />
-              <div>
-                <h3 class="portfolio-title">Cafeteria - Landing Page</h3>
-                <p class="portfolio-description">
-                  Uma landing page de uma cafeteria moderna.
-                </p>
-                <a
-                  href="https://matheusmalena.github.io/landing-page_cafeteria/"
-                  target="_blank"
-                  class="portfolio-button"
-                >
-                  View <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-button-next">
-            
-          </div>
-          <div class="swiper-button-prev">
-            
-          </div>
-        </div> -->
+  <swiper
+      :navigation="true" :pagination="true" :modules="modules" class="mySwiper"
+    >
+      <swiper-slide><img class="img-carrousel-estruture" src="../assets/quadra.jpeg" /></swiper-slide>
+      <swiper-slide><img class="img-carrousel-estruture" src="../assets/playground.jpg" alt="" /></swiper-slide>
+      <swiper-slide><img class="img-carrousel-estruture" src="../assets/sala.jpg" alt="" /></swiper-slide>
+      <swiper-slide><img class="img-carrousel-estruture" src="../assets/pingpong.jpeg" alt="" /></swiper-slide>
+      <swiper-slide><img class="img-carrousel-estruture" src="../assets/quadra.jpeg" /></swiper-slide>
+    </swiper>
       </div>
     </section>
 
@@ -400,7 +286,7 @@
       <h2>Siga nossa página no <span>Instagram</span> </h2>
     <div class="instagram-wrapper">
     <InstagramFeed
-      :count="6"
+      :count="8"
       :accessToken="accessToken"
       :pagination="true"
       :caption="true"
@@ -417,7 +303,7 @@
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
-import { Autoplay } from 'swiper';
+import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 import emailComponent from './emailComponent.vue';
 import verseComponent from './verseComponent.vue';
 
@@ -437,7 +323,7 @@ export default {
   },
   setup() {
     return {
-      modules: [Autoplay],
+      modules: [Autoplay, Navigation, Pagination],
     };
   },
   methods: {
@@ -465,16 +351,6 @@ export default {
 </script>
 
 <style>
-/* Estilos opcionais para o componente Vue */
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: auto;
-}
 
 .instagram-wrapper {
   max-width: 100% !important;
@@ -542,6 +418,16 @@ button {
   margin: 0.5rem !important;
   border: 1px solid var(--orange);
   border-radius: 8px !important;
+}
+
+.swiper-button-next:after {
+  margin: 0 3rem 0 0;
+  color: var(--orange);
+}
+
+.swiper-button-prev:after{
+  margin: 0 0 0 3rem;
+  color: var(--orange);
 }
 
 </style>

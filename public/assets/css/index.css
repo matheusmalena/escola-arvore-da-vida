@@ -274,7 +274,7 @@ html {
   align-items: center !important;
 }
 
-.swiper-slide {
+.swiper-slide-partners {
   width: 200px !important;
   max-height: 80px;
   text-align: center;
@@ -286,7 +286,7 @@ html {
   padding: 0 1rem;
 }
 
-.swiper-slide img {
+.swiper-slide-partners img {
   width: 200px;
   /* As imagens ocupam 100% da largura da slide */
   height: auto;

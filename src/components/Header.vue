@@ -26,7 +26,7 @@
           </ul>
         </li>
         <li><a href="#about" @click="handleMenuClick">Sobre Nós</a></li>
-        <li><a href="#estrutura" @click="handleMenuClick">Estrutura</a></li>
+        <li><a href="#structure" @click="handleMenuClick">Estrutura</a></li>
         <li><a href="#contact" @click="handleMenuClick">Contato</a></li>
       </ul>
 

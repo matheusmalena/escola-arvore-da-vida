@@ -266,7 +266,7 @@
       .redes-footer{
         display: none !important;
       }
-      .swiper-slide {
+      .swiper-slide-partners {
         width: 60px !important;
         max-height: 100px;
         text-align: center;
@@ -278,7 +278,7 @@
         padding: 0 1rem;
       }
       
-      .swiper-slide img {
+      .swiper-slide-partners img {
         width: 100px;
         height: auto;
         padding: 0 1rem;

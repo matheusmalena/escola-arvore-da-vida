@@ -51,6 +51,10 @@ export default {
       horariosBercario: [
         { periodo: "Tarde", horario: "13h às 17h30" },
         { periodo: "Integral", horario: "08h ás 18h" },
+        { periodo: "-", horario: "-" },
+        { periodo: "Futebol", horario: "17h30 ás 18h30 - (Quarta-feira)" },
+        { periodo: "Ballet", horario: "17h30 ás 18h30 - (Quarta-feira)" },
+        { periodo: "Judô", horario: "17h40 ás 18h30 - (Quinta-feira)" },
       ],
     };
   },

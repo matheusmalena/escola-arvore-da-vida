@@ -42,10 +42,8 @@ export default {
   data() {
     return {
       horariosBercario: [
-        { periodo: "Manhã", horario: "07:00 ás 12:30" },
-        { periodo: "Tarde", horario: "12:45 às 17:00" },
-        { periodo: "Integral", horario: "08:00 ás 17:30" },
-        { periodo: "Estendido", horario: "07:00 às 19:00" },
+        { periodo: "Meio período", horario: "13h às 17h" },
+        { periodo: "Integral", horario: "8h ás 18h" },
       ],
     };
   },

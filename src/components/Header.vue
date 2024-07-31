@@ -11,8 +11,8 @@
           <a href="#turmas" @click="handleMenuClick">Turmas</a>
           <ul class="submenu">
             <li><router-link to="/Bercario" @click="handleMenuClick">Baby</router-link></li>
-            <li><a href="#turmas2" @click="handleMenuClick">Educação Infantil</a></li>
-            <li><a href="#turmas2" @click="handleMenuClick">Ensino Fundamental I</a></li>
+            <li><router-link to="/EducacaoInfantil" @click="handleMenuClick">Educação Infantil</router-link></li>
+            <li><router-link to="/EnsinoFundamentalI" @click="handleMenuClick">Ensino Fundamental I</router-link></li>
           </ul>
         </li>
         <li>

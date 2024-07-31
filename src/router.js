@@ -2,10 +2,14 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import PaginaInicial from '../src/components/PaginaInicial.vue';
 import babyComponent from '../src/components/babyComponent.vue';
+import Infant from '../src/components/Infant.vue';
+import EnsinoFundamentalI from '../src/components/EnsinoFundamentalI.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: PaginaInicial },
-  { path: '/Bercario', name: 'Baby', component: babyComponent},
+  { path: '/Bercario', name: 'Bercario', component: babyComponent},
+  { path: '/EducacaoInfantil', name: 'Infant', component: Infant},
+  { path: '/EnsinoFundamentalI', name: 'EnsinoFundamentalI', component: EnsinoFundamentalI},
 ];
 
 const router = createRouter({

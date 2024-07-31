@@ -44,7 +44,7 @@
 }
 
 @media (max-width: 947px) {
-    .menu-btn {
+    /* .menu-btn {
         display: flex;
         z-index: 999;
         align-items: center;
@@ -101,7 +101,7 @@
 
     .nav-bar .menu li.active .submenu {
         display: block;
-    }
+    } */
 
     .home .home-content .text2 {
         font-size: 60px;

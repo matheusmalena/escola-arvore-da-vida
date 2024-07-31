@@ -44,7 +44,7 @@
             Promove o crescimento saudável e feliz do bebê com experiências sensoriais e
             educativas desde os primeiros passos.
           </p>
-          <button>Veja mais Detalhes</button>
+          <router-link to="/Bercario" class="btn-turmas" >Veja mais detalhes</router-link>
         </div>
         <div class="card-turma-02 card-turmas">
           <img src="../assets/foto-2.jpg" alt="Ensino Fundamental I" />
@@ -53,7 +53,7 @@
             Destina-se à formação da criança visando o desenvolvimento integral e
             harmonioso de suas potencialidades.
           </p>
-          <button>Veja mais Detalhes</button>
+          <router-link to="/Infantil" class="btn-turmas" >Veja mais detalhes</router-link>
         </div>
         <div class="card-turma-03 card-turmas">
           <img src="" alt="Novo Ensino Médio" />
@@ -62,7 +62,7 @@
             Estimula o aprendizado e o desenvolvimento integral das crianças,
             preparando-as para um futuro de descobertas e conquistas.
           </p>
-          <button>Veja mais Detalhes</button>
+          <router-link to="/EnsinoFundamentalI" class="btn-turmas" >Veja mais detalhes</router-link>
         </div>
       </div>
     </section>

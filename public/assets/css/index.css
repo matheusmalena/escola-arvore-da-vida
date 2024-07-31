@@ -1334,3 +1334,14 @@ footer img {
   border: 1px solid var(--orange);
   border-radius: 1rem;
 }
+
+.btn-turmas {
+  background-color: var(--first-color);
+  color: white;
+  padding: 0.4rem !important;
+  font-family: var(--poppins);
+  margin: 0.5rem !important;
+  border: 1px solid var(--first-color);
+  border-radius: 8px !important;
+  text-decoration: none;
+}

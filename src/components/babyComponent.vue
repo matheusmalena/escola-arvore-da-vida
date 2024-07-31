@@ -1,5 +1,4 @@
 <template>
-  <Header></Header>
   <div class="green"></div>
 
   <img src="" alt="" />
@@ -28,14 +27,12 @@
 
 <script>
 import EmailComponent from "./emailComponent.vue";
-import Header from "./Header.vue";
 import TableComponent from "./TableComponent.vue";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "babyComponent",
   components: {
-    Header,
     EmailComponent,
     TableComponent,
   },

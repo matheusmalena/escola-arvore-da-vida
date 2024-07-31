@@ -16,14 +16,7 @@
           </ul>
         </li>
         <li>
-          <a href="#extracurricular" @click="handleMenuClick">Atividades</a>
-          <ul class="submenu">
-            <li><a href="#atividade1" @click="handleMenuClick">Ballet</a></li>
-            <li><a href="#atividade2" @click="handleMenuClick">Judo</a></li>
-            <li><a href="#atividade2" @click="handleMenuClick">Futebol</a></li>
-            <li><a href="#atividade2" @click="handleMenuClick">Passeios e visitações</a></li>
-            <li><a href="#atividade2" @click="handleMenuClick">Festas temáticas</a></li>
-          </ul>
+          <a href="#services" @click="handleMenuClick">Atividades</a>
         </li>
         <li><a href="#about" @click="handleMenuClick">Sobre Nós</a></li>
         <li><a href="#structure" @click="handleMenuClick">Estrutura</a></li>
@@ -31,8 +24,8 @@
       </ul>
 
       <!-- icon menu responsive -->
-      <div class="menu-btn" @click="toggleMenu">
-        <i class="fa fa-bars" :class="{ active: isMenuActive }"></i>
+      <div class="menu-btn" @click="toggleSidebar">
+        <i class="fa fa-bars" :class="{ active: isSidebarActive }"></i>
       </div>
       <div>
         <a target="_blank" href="https://wa.me/5511972216682" class="botao-entrar-em-contato">
@@ -40,6 +33,29 @@
         </a>
       </div>
     </nav>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar" :class="{ active: isSidebarActive }">
+      <div class="sidebar-close" @click="toggleSidebar">
+        <i class="fa fa-times"></i>
+      </div>
+      <ul class="sidebar-menu">
+        <li>
+          <a href="#turmas" @click="toggleSubmenu('turmas')">Turmas</a>
+          <ul v-if="activeSubmenu === 'turmas'" class="sidebar-submenu">
+            <li><router-link to="/Bercario" @click="closeSidebar">Baby</router-link></li>
+            <li><router-link to="/EducacaoInfantil" @click="closeSidebar">Educação Infantil</router-link></li>
+            <li><router-link to="/EnsinoFundamentalI" @click="closeSidebar">Ensino Fundamental I</router-link></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#services" @click="closeSidebar">Atividades</a>
+        </li>
+        <li><a href="#about" @click="closeSidebar">Sobre Nós</a></li>
+        <li><a href="#structure" @click="closeSidebar">Estrutura</a></li>
+        <li><a href="#contact" @click="closeSidebar">Contato</a></li>
+      </ul>
+    </div>
   </header>
 </template>
 
@@ -50,7 +66,8 @@ export default {
   data() {
     return {
       isSticky: false,
-      isMenuActive: false,
+      isSidebarActive: false,
+      activeSubmenu: null,
     };
   },
   mounted() {
@@ -61,124 +78,134 @@ export default {
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
-  adjustFirstSectionPadding() {
-    const navBar = document.querySelector('.nav-bar');
-    const firstSection = document.querySelector('.first-section');
-    if (navBar && firstSection) {
-      const navBarHeight = navBar.offsetHeight;
-      firstSection.style.paddingTop = `${navBarHeight + 20}px`;
-    }
-  },
-  toggleMenu() {
-    this.isMenuActive = !this.isMenuActive;
-    const menu = document.getElementById('menu');
-    if (this.isMenuActive) {
-      menu.classList.add('active');
-    } else {
-      menu.classList.remove('active');
-    }
-  },
-  handleScroll() {
-    const navBar = document.querySelector('.nav-bar');
-    if (navBar) {
-      this.isSticky = window.scrollY > 20;
-      if (this.isSticky) {
-        navBar.classList.add('sticky');
-      } else {
-        navBar.classList.remove('sticky');
-      }
-    }
-  },
-  handleMenuClick() {
-      if (this.isMenuActive) {
-        this.toggleMenu();
+    adjustFirstSectionPadding() {
+      const navBar = document.querySelector('.nav-bar');
+      const firstSection = document.querySelector('.first-section');
+      if (navBar && firstSection) {
+        const navBarHeight = navBar.offsetHeight;
+        firstSection.style.paddingTop = `${navBarHeight + 20}px`;
       }
     },
-}
+    toggleSidebar() {
+      this.isSidebarActive = !this.isSidebarActive;
+    },
+    toggleSubmenu(menu) {
+      this.activeSubmenu = this.activeSubmenu === menu ? null : menu;
+    },
+    handleScroll() {
+      const navBar = document.querySelector('.nav-bar');
+      if (navBar) {
+        this.isSticky = window.scrollY > 20;
+        if (this.isSticky) {
+          navBar.classList.add('sticky');
+        } else {
+          navBar.classList.remove('sticky');
+        }
+      }
+    },
+    closeSidebar() {
+      this.isSidebarActive = false;
+    },
+    handleMenuClick() {
+      if (this.isSidebarActive) {
+        this.closeSidebar();
+      }
+    },
+  }
 };
 </script>
 
 <style>
-/* Estilos */
+/* Estilos para o menu responsivo e sidebar */
+.menu-btn {
+  display: none;
+}
+
+/* Estilos para o menu na tela grande */
 .nav-bar {
-  position: fixed;
-  background: var(--first-color);
-  width: 100%;
-  padding: 30px 0;
-  font-family: "Poppins", sans-serif;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: row !important;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 1000; /* Ajuste o z-index para garantir que o nav-bar esteja sobre outros elementos */
+  /* seus estilos atuais */
 }
 
 .nav-bar.sticky {
-  padding: 15px 0;
-  background: var(--first-color);
-  z-index: 999;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  /* seus estilos atuais */
 }
 
-.menu-btn {
-  color: var(--color-white);
-  font-size: 23px;
-  cursor: pointer;
-}
+/* Estilos para o menu responsivo */
+@media (max-width: 945px) {
+  .menu-btn {
+    display: flex;
+    z-index: 999;
+    align-items: center;
+    gap: 1rem;
+  }
 
-.menu-btn i.active {
-  color: var(--orange); /* Cor quando ativo */
-}
+  .menu-btn i.active:before {
+    content: "\f00d"; /* Ícone de fechar */
+  }
 
-.menu .submenu {
-  display: none;
-  position: absolute;
-  background-color: var(--color-white);
-  border: 1px solid var(--color-white);
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
-  z-index: 1000;
-}
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background: var(--color-black-clean);
+    transition: left 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+  }
 
-.menu li:hover .submenu {
-  display: block;
-}
+  .sidebar.active {
+    left: 0;
+  }
 
-.menu li {
-  position: relative;
-}
+  .sidebar-close {
+    text-align: right;
+    margin-bottom: 20px;
+  }
 
-.menu li a {
-  display: block;
-  color: var(--color-white);
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 25px;
-  transition: color 0.3s ease;
-  text-decoration: none;
-}
+  .sidebar-close i {
+    font-size: 24px;
+    color: var(--color-white);
+    cursor: pointer;
+  }
 
-.menu li a:hover {
-  color: var(--orange);
-}
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
-.submenu li {
-  padding: 10px 20px;
-}
+  .sidebar-menu li {
+    margin-bottom: 15px;
+  }
 
-.submenu li a {
-  color: var(--color-black) !important;
-  text-decoration: none;
-  font-size: 14px !important;
-  margin: 0 !important;
-}
+  .sidebar-menu li a {
+    display: block;
+    color: var(--color-white);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+  }
 
-.submenu li a:hover {
-  color: var(--color-orange-light) !important;
-  text-decoration: none;
-  font-size: 14px !important;
-  margin: 0 !important;
+  .sidebar-menu li a:hover {
+    color: var(--orange);
+  }
+
+  .sidebar-submenu {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .sidebar-submenu li {
+    margin-bottom: 10px;
+  }
+
+  .sidebar-submenu li a {
+    font-size: 18px;
+  }
 }
 </style>

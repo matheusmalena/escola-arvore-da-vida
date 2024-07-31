@@ -3,14 +3,14 @@
     <!--- MENU NAVBAR --->
     <nav class="nav-bar">
       <div class="logo">
-        <a href="#"><img class="logo" src="../assets/logo.jpg" alt=""></a>
+        <router-link to="/"><img class="logo" src="../assets/logo.jpg" alt=""></router-link>
       </div>
 
       <ul id="menu" class="menu">
         <li>
           <a href="#turmas" @click="handleMenuClick">Turmas</a>
           <ul class="submenu">
-            <li><a href="./baby.html" @click="handleMenuClick">Baby</a></li>
+            <li><router-link to="/Bercario" @click="handleMenuClick">Baby</router-link></li>
             <li><a href="#turmas2" @click="handleMenuClick">Educação Infantil</a></li>
             <li><a href="#turmas2" @click="handleMenuClick">Ensino Fundamental I</a></li>
           </ul>

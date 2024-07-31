@@ -1282,3 +1282,55 @@ footer img {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-color-light);
 }
+
+
+/* Componentes turmas */
+
+.card-component-turmas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card-component-turmas h2 {
+  color: var(--orange);
+  font-weight: 800;
+  font-family: var(--baloo);
+}
+
+.card-component-turmas p {
+  font-weight: 600;
+  text-align: start;
+}
+
+.card-component-turmas .card-text-turmas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.card-text-turmas p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.card-text-turmas {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.card-img-turmas {
+  width: 40%;
+}
+
+.card-img-turmas img{
+  width: 80%;
+  height: auto;
+  border: 1px solid var(--orange);
+  border-radius: 1rem;
+}

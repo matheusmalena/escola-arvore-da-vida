@@ -227,7 +227,7 @@
     }
 
     .fa-whatsapp {
-        font-size: 12px;
+        font-size: 20px;
     }
 
     .content-footer,
@@ -252,6 +252,10 @@
         display: flex;
         flex-direction: row;
         gap: 1rem;
+    }
+
+    .responsive-icons a {
+        font-size: 20px !important;
     }
 
     .container-footer p,

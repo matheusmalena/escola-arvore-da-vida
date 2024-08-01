@@ -7,13 +7,13 @@
       </div>
       <div class="responsive-icons">
         <div class="redes-responsive-icons">
-          <a target="_blank" href="">
+          <a target="_blank" href="https://www.instagram.com/arvoredavidaperuibe/">
             <font-awesome-icon :icon="['fab', 'instagram']"></font-awesome-icon
           ></a>
-          <a target="_blank" href="">
-            <font-awesome-icon :icon="['fas', 'phone']"></font-awesome-icon
+          <a target="_blank" href="https://wa.me/5511972216682">
+            <font-awesome-icon :icon="['fab', 'whatsapp']"></font-awesome-icon
           ></a>
-          <a target="_blank" href="">
+          <a target="_blank" href="https://pt-br.facebook.com/arvoredavidaperuibe">
             <font-awesome-icon :icon="['fab', 'facebook']"></font-awesome-icon
           ></a>
         </div>
@@ -32,15 +32,15 @@
         </ul>
       </div>
       <div class="redes-footer">
-        <a target="_blank" href="">
+        <a target="_blank" href="https://www.instagram.com/arvoredavidaperuibe/">
           <font-awesome-icon :icon="['fab', 'instagram']"></font-awesome-icon
           ><span>Instagram</span></a
         >
         <a target="_blank" href="">
           <font-awesome-icon :icon="['fas', 'phone']"></font-awesome-icon
-          ><span>Telefone</span></a
+          ><span>(13) 3453-4922</span></a
         >
-        <a target="_blank" href="">
+        <a target="_blank" href="https://pt-br.facebook.com/arvoredavidaperuibe">
           <font-awesome-icon :icon="['fab', 'facebook']"></font-awesome-icon
           ><span>Facebook</span></a
         >

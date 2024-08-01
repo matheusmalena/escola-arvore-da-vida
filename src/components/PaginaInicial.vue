@@ -38,7 +38,7 @@
       <h1>O colégio <span>Atende</span></h1>
       <div class="container-turmas">
         <div class="card-turma-01 card-turmas">
-          <img src="../assets/baby.jpg" alt="Educação Infantil Bilíngue" />
+          <img src="../assets/rael.png" alt="Educação Infantil Bilíngue" />
           <h3>Aprendizado<br /><strong>Baby</strong></h3>
           <p>
             Promove o crescimento saudável e feliz do bebê com experiências sensoriais e
@@ -53,7 +53,7 @@
             Destina-se à formação da criança visando o desenvolvimento integral e
             harmonioso de suas potencialidades.
           </p>
-          <router-link to="/Infantil" class="btn-turmas" >Veja mais detalhes</router-link>
+          <router-link to="/EducacaoInfantil" class="btn-turmas" >Veja mais detalhes</router-link>
         </div>
         <div class="card-turma-03 card-turmas">
           <img src="" alt="Novo Ensino Médio" />

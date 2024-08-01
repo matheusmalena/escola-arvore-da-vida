@@ -42,6 +42,12 @@ html {
   margin: auto;
 }
 
+.green {
+  display: none;
+  color: white !important;
+  text-decoration: none;
+}
+
 
 /* ============= MENU NAVBAR ============= */
 .nav-bar {

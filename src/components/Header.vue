@@ -41,7 +41,7 @@
       </div>
       <ul class="sidebar-menu">
         <li>
-          <a href="#turmas" @click="toggleSubmenu('turmas')">Turmas</a>
+          <a href="#turmas" @click="toggleSubmenu('turmas')">Turmas  <font-awesome-icon :icon="activeSubmenu === 'turmas' ? 'fa-solid fa-angle-up' : 'fa-solid fa-angle-down'" /> </a>
           <ul v-if="activeSubmenu === 'turmas'" class="sidebar-submenu">
             <li><router-link to="/Bercario" @click="closeSidebar">Baby</router-link></li>
             <li><router-link to="/EducacaoInfantil" @click="closeSidebar">Educação Infantil</router-link></li>
@@ -206,6 +206,13 @@ export default {
 
   .sidebar-submenu li a {
     font-size: 18px;
+  }
+
+  .sidebar-menu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 }
 </style>

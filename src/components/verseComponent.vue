@@ -10,7 +10,7 @@
             <span class="versicule">João 8:32 </span>
         </div>
         <div class="verse-02">
-            <img src="../assets/mackenziesite2-removebg-preview.png" alt="">
+            <img src="../assets/logo-mkz-red.png" alt="">
         </div>
       </div>
     </section>

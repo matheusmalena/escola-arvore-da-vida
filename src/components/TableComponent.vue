@@ -70,6 +70,12 @@
     font-weight: 800;
   }
 
+  @media (max-width: 947px) {
+    .horario-tabela table {
+    width: 100%;
+  }
+  }
+
   
   
   </style>

@@ -41,6 +41,10 @@
     .nav-bar .menu-btn {
         margin-left: 0 !important;
     }
+
+    .green {
+        display: block;
+      }
 }
 
 @media (max-width: 947px) {
@@ -413,6 +417,24 @@
       .verse-01 .versicule {
         width: 80px;
         font-size: 12px;
+      }
+
+      .card-component-turmas {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .card-text-turmas {
+       width: 100% !important;
+      }
+
+      .card-img-turmas{
+        width: 100%;
+      }
+
+      .verse-01 h2 {
+        font-size: 20px !important;
       }
 
 }

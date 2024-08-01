@@ -1037,6 +1037,7 @@ span {
 
 .icon-tell {
   background-color: black;
+  font-size: 26px !important;
 }
 
 .fa-phone-form {

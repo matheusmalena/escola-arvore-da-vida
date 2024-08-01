@@ -23,6 +23,12 @@
         <li><a href="#contact" @click="handleMenuClick">Contato</a></li>
       </ul>
 
+      <div class="link-principal-responsivo">
+        <a target="_blank" href="https://wa.me/5511972216682" class="botao-entrar-em-contato-responsivo">
+          Fale conosco <font-awesome-icon :icon="['fab', 'whatsapp']" />
+        </a>
+      </div>
+
       <!-- icon menu responsive -->
       <div class="menu-btn" @click="toggleSidebar">
         <i class="fa fa-bars" :class="{ active: isSidebarActive }"></i>

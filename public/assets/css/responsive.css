@@ -271,6 +271,23 @@
       .redes-footer{
         display: none;
       }
+
+      .link-principal-responsivo {
+        display: flex !important;
+      }
+
+      .link-principal-responsivo a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-white);
+        color: var(--color-black-clean);
+        text-decoration: none;
+        gap: 0.3rem;
+        border-radius: 20px;
+        padding: 0.4rem;
+        font-size: 12px !important;
+      }
 }
 
 @media (max-width: 690px) {

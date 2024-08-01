@@ -163,6 +163,14 @@ html {
   display: none !important;
 }
 
+.link-principal-responsivo {
+  display: none;
+}
+
+.botao-entrar-em-contato-responsivo {
+  display: none;
+}
+
 /* ============= FIRST SECTION ============= */
 
 .section-carrousel {

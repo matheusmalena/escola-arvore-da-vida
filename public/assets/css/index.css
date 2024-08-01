@@ -1035,6 +1035,10 @@ span {
   background-color: rgb(46, 175, 53);
 }
 
+.icon-tell {
+  background-color: black;
+}
+
 .fa-phone-form {
   width: 50px;
   height: 50px;

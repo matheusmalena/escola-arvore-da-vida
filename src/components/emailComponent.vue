@@ -35,11 +35,10 @@
                   ><font-awesome-icon :icon="['fab', 'instagram']" /></a>
                 <a href="https://wa.me/5511972216682" class="icons-forms icon-whatsapp"
                   ><font-awesome-icon :icon="['fab', 'whatsapp']" /></a>
-                  <font-awesome-icon :icon="['fas', 'phone']" />
+                  <a href=""  class="icons-forms icon-tell"><font-awesome-icon :icon="['fas', 'phone']" /></a>
                 <div class="d-flex flex-row">
                   <div class="d-flex justify-content-center align-items-center"></div>
                   <div class="d-flex flex-column m-2 content-tell">
-                    <p>Telefone</p>
                     <span>(13) 3453-4922</span>
                   </div>
                 </div>

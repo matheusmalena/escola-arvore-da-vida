@@ -68,14 +68,14 @@
             />
           </a>
           <ul v-if="activeSubmenu === 'turmas'" class="sidebar-submenu">
-            <li><router-link to="/Bercario" @click="closeSidebar">Baby</router-link></li>
+            <li><router-link to="/Bercario" class="submenu" @click="closeSidebar">Baby</router-link></li>
             <li>
-              <router-link to="/EducacaoInfantil" @click="closeSidebar"
+              <router-link to="/EducacaoInfantil" class="submenu" @click="closeSidebar"
                 >Educação Infantil</router-link
               >
             </li>
             <li>
-              <router-link to="/EnsinoFundamentalI" @click="closeSidebar"
+              <router-link to="/EnsinoFundamentalI"  class="submenu" @click="closeSidebar"
                 >Ensino Fundamental I</router-link
               >
             </li>
@@ -199,7 +199,7 @@ export default {
   }
 
   .fa-bars {
-    margin: 0 0 0 180px;
+    margin: 0 0 0 100px;
   }
 
   .menu-btn i.active:before {
@@ -300,6 +300,14 @@ export default {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
+  }
+
+  .submenu {
+    color: var(--yellow) !important;
+  }
+
+  .submenu:hover {
+    color: var(--yellow-hover) !important;
   }
 }
 </style>

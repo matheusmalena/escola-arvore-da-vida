@@ -25,17 +25,17 @@
             <div class="form-right">
               <h2>Fale conosco</h2>
               <div class="d-flex flex-row gap-2">
-                <a
+                <a target="_blank"
                   href="https://pt-br.facebook.com/arvoredavidaperuibe"
                   class="icons-forms icon-facebook"
                   ><font-awesome-icon :icon="['fab', 'facebook']" /></a>
-                <a
+                <a target="_blank"
                   href="https://www.instagram.com/arvoredavidaperuibe/"
                   class="icons-forms icon-instagram"
                   ><font-awesome-icon :icon="['fab', 'instagram']" /></a>
-                <a href="https://wa.me/5511972216682" class="icons-forms icon-whatsapp"
+                <a target="_blank" href="https://wa.me/5511972216682" class="icons-forms icon-whatsapp"
                   ><font-awesome-icon :icon="['fab', 'whatsapp']" /></a>
-                  <a href=""  class="icons-forms icon-tell"><font-awesome-icon :icon="['fas', 'phone']" /></a>
+                  <a  href=""  class="icons-forms icon-tell"><font-awesome-icon :icon="['fas', 'phone']" /></a>
                 <div class="d-flex flex-row">
                   <div class="d-flex justify-content-center align-items-center"></div>
                   <div class="d-flex flex-column m-2 content-tell">

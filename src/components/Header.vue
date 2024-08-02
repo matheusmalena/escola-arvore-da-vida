@@ -199,7 +199,7 @@ export default {
   }
 
   .fa-bars {
-    margin: 0 0 0 100px;
+    margin: 0 0 0 180px;
   }
 
   .menu-btn i.active:before {
@@ -282,7 +282,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20rem;
+    gap: 10rem;
   }
 
   .footer-sidebar .responsive-icons {

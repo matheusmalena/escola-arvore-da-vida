@@ -37,72 +37,10 @@
         justify-content: space-around !important;
         align-items: center;
     }
-
-    .nav-bar .menu-btn {
-        margin-left: 200px !important;
-    }
 }
 
 @media (max-width: 947px) {
-    /* .menu-btn {
-        display: flex;
-        z-index: 999;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .menu-btn i.active:before {
-        content: "\f00d";
-    }
-
-    .nav-bar .menu {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: var(--color-black-clean);
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-
-    .nav-bar .menu.active {
-        left: 0;
-    }
-
-    .nav-bar .menu li {
-        display: block;
-    }
-
-    .nav-bar .menu li a {
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-
-    .nav-bar .menu .submenu {
-        position: static;
-        box-shadow: none;
-        padding: 0;
-    }
-
-    .nav-bar .menu .submenu li {
-        padding: 10px 0;
-    }
-
-    .nav-bar .menu li:hover .submenu {
-        display: none;
-    }
-
-    .nav-bar .menu li .submenu {
-        display: none;
-    }
-
-    .nav-bar .menu li.active .submenu {
-        display: block;
-    } */
-
+    
     .home .home-content .text2 {
         font-size: 60px;
     }
@@ -274,6 +212,8 @@
 
       .link-principal-responsivo {
         display: flex !important;
+        justify-content: center;
+        align-items: center;
       }
 
       .link-principal-responsivo a {
@@ -285,8 +225,13 @@
         text-decoration: none;
         gap: 0.3rem;
         border-radius: 20px;
-        padding: 0.4rem;
-        font-size: 12px !important;
+        padding: 0.5rem;
+        font-size: 16px !important;
+      }
+
+      .icon-tell {
+        background-color: black;
+        font-size: 20px !important;
       }
 }
 

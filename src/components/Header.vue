@@ -23,12 +23,6 @@
         <li><a href="#contact" @click="handleMenuClick">Contato</a></li>
       </ul>
 
-      <div class="link-principal-responsivo">
-        <a target="_blank" href="https://wa.me/5511972216682" class="botao-entrar-em-contato-responsivo">
-          Fale conosco <font-awesome-icon :icon="['fab', 'whatsapp']" />
-        </a>
-      </div>
-
       <!-- icon menu responsive -->
       <div class="menu-btn" @click="toggleSidebar">
         <i class="fa fa-bars" :class="{ active: isSidebarActive }"></i>
@@ -61,7 +55,13 @@
         <li><a href="#structure" @click="closeSidebar">Estrutura</a></li>
         <li><a href="#contact" @click="closeSidebar">Contato</a></li>
       </ul>
+      <div class="link-principal-responsivo">
+        <a target="_blank" href="https://wa.me/5511972216682" class="botao-entrar-em-contato-responsivo">
+          Fale conosco <font-awesome-icon :icon="['fab', 'whatsapp']" />
+        </a>
+      </div>
     </div>
+    <div v-if="isSidebarActive" class="overlay" @click="closeSidebar"></div>
   </header>
 </template>
 
@@ -78,7 +78,7 @@ export default {
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
-    this.adjustFirstSectionPadding(); // Chama a função para ajustar o padding inicial
+    this.adjustFirstSectionPadding();
   },
   beforeUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
@@ -125,6 +125,7 @@ export default {
 /* Estilos para o menu responsivo e sidebar */
 .menu-btn {
   display: none;
+  margin: 0 0 0 200px !important;
 }
 
 /* Estilos para o menu na tela grande */
@@ -145,8 +146,12 @@ export default {
     gap: 1rem;
   }
 
+  .fa-bars {
+    margin: 0 0 0 180px;
+  }
+
   .menu-btn i.active:before {
-    content: "\f00d"; /* Ícone de fechar */
+    content: "" !important;
   }
 
   .sidebar {
@@ -214,11 +219,21 @@ export default {
     font-size: 18px;
   }
 
-  .sidebar-menu li a{
+  .sidebar-menu li a {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
   }
 }
 </style>

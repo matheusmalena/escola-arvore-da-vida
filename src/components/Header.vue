@@ -10,6 +10,10 @@
 
       <ul id="menu" class="menu">
         <li>
+          <router-link to="/"
+            >Inicial</router-link>
+        </li>
+        <li>
           <a href="#turmas" @click="handleMenuClick">Turmas</a>
           <ul class="submenu">
             <li>
@@ -28,10 +32,10 @@
           </ul>
         </li>
         <li>
-          <a href="#services" @click="handleMenuClick">Atividades</a>
+          <a href="/#services" @click="handleMenuClick">Atividades</a>
         </li>
-        <li><a href="#about" @click="handleMenuClick">Sobre Nós</a></li>
-        <li><a href="#structure" @click="handleMenuClick">Estrutura</a></li>
+        <li><a href="/#about" @click="handleMenuClick">Sobre Nós</a></li>
+        <li><a href="/#structure" @click="handleMenuClick">Estrutura</a></li>
         <li><a href="#contact" @click="handleMenuClick">Contato</a></li>
       </ul>
 
@@ -68,14 +72,18 @@
             />
           </a>
           <ul v-if="activeSubmenu === 'turmas'" class="sidebar-submenu">
-            <li><router-link to="/Bercario" class="submenu" @click="closeSidebar">Baby</router-link></li>
+            <li>
+              <router-link to="/Bercario" class="submenu" @click="closeSidebar"
+                >Baby</router-link
+              >
+            </li>
             <li>
               <router-link to="/EducacaoInfantil" class="submenu" @click="closeSidebar"
                 >Educação Infantil</router-link
               >
             </li>
             <li>
-              <router-link to="/EnsinoFundamentalI"  class="submenu" @click="closeSidebar"
+              <router-link to="/EnsinoFundamentalI" class="submenu" @click="closeSidebar"
                 >Ensino Fundamental I</router-link
               >
             </li>

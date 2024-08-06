@@ -233,6 +233,57 @@
         background-color: black;
         font-size: 20px !important;
       }
+
+      .bilingue {
+        background-color: var(--azul);
+        color: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .bilingue h2 {
+        color: var(--yellow);
+        font-family: var(--baloo);
+        font-weight: 800;
+        font-size: 28px;
+      }
+      
+      .bilingue h3 {
+        color: var();
+        font-family: var(--baloo);
+        font-weight: 800;
+        font-size: 20px;
+      }
+
+      .bilingue p {
+        font-size: 16px;
+      }
+      
+      .card-bilingue {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        }
+      
+        .bilingue-first {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100% !important;
+        }
+      
+        .bilingue-second {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100% !important;
+        }
 }
 
 @media (max-width: 690px) {

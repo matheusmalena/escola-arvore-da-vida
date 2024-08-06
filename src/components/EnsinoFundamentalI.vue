@@ -138,4 +138,8 @@ export default {
     justify-content: center;
     width: 40%;
   }
+
+  .bilingue-second img {
+    width: 100%;
+  }
 </style>

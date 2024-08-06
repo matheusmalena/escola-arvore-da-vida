@@ -247,18 +247,18 @@
         color: var(--yellow);
         font-family: var(--baloo);
         font-weight: 800;
-        font-size: 28px;
+        font-size: 25px !important;
       }
       
       .bilingue h3 {
         color: var();
         font-family: var(--baloo);
         font-weight: 800;
-        font-size: 20px;
+        font-size: 20px !important;
       }
 
       .bilingue p {
-        font-size: 16px;
+        font-size: 14px;
       }
       
       .card-bilingue {

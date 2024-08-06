@@ -36,7 +36,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 4rem 2rem 0 2rem;
   }
   
   .horario-tabela table {

@@ -381,14 +381,14 @@ section .title::after {
 }
 
 
-.turmas span, .services span, .proposta-card h2 span, .instagram span{
+.turmas span, .services span, .proposta-card h2 span, .instagram span, .structure span{
   color: var(--orange);
   font-family: var(--baloo);
   font-weight: 800;
   font-size: 42px;
 }
 
-.turmas h1, .services h2, .proposta-card h2, .instagram h2{
+.turmas h1, .services h2, .proposta-card h2, .instagram h2, .structure h2 {
   color: #2c3e50;
 }
 

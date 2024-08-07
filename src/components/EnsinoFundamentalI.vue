@@ -28,7 +28,7 @@
   </section>
 
   <section class="section bilingue">
-    <div class="card-bilingue" >
+    <div class="card-bilingue">
       <div class="bilingue-first">
         <h2>Educação Bilíngue</h2>
         <p>
@@ -46,8 +46,10 @@
         </p>
         <p>
           Oferecemos aulas diárias de inglês, combinando diversão e aprendizado. Nossa
-          abordagem lúdica inclui músicas, histórias e brincadeiras, tornando o
-          aprendizado envolvente e prazeroso.
+          abordagem inclui leitura, escrita, conversação, além de músicas, histórias e
+          jogos. Isso proporciona uma base sólida para o desenvolvimento contínuo das
+          habilidades linguísticas e prepara os alunos para futuros desafios acadêmicos,
+          tornando o aprendizado envolvente e eficaz.
         </p>
       </div>
       <div class="bilingue-second">
@@ -122,24 +124,24 @@ export default {
   align-items: center;
   width: 80%;
   gap: 1rem;
-  }
+}
 
-  .bilingue-first {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 56%;
-  }
+.bilingue-first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 56%;
+}
 
-  .bilingue-second {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-  }
+.bilingue-second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
 
-  .bilingue-second img {
-    width: 100%;
-  }
+.bilingue-second img {
+  width: 100%;
+}
 </style>

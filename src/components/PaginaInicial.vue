@@ -191,18 +191,18 @@
       class="structure section"
       id="structure"
     >
-      <div class="max-width" data-aos="fade-down">
+      <div class="" data-aos="fade-down">
         <div>
           <h2 class="title">Nossa <span>estrutura</span></h2>
         </div>
   <swiper
       :navigation="true" :pagination="true" :modules="modules" class="mySwiper"
     >
-      <swiper-slide><img class="img-carrousel-estruture" src="../assets/quadra.jpeg" /></swiper-slide>
-      <swiper-slide><img class="img-carrousel-estruture" src="../assets/playground.jpg" alt="" /></swiper-slide>
-      <swiper-slide><img class="img-carrousel-estruture" src="../assets/sala.jpg" alt="" /></swiper-slide>
-      <swiper-slide><img class="img-carrousel-estruture" src="../assets/pingpong.jpeg" alt="" /></swiper-slide>
-      <swiper-slide><img class="img-carrousel-estruture" src="../assets/quadra.jpeg" /></swiper-slide>
+      <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/quadra.jpeg" /></swiper-slide>
+      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/playground.jpg" alt="" /></swiper-slide>
+      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/sala.jpg" alt="" /></swiper-slide>
+      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/pingpong.jpeg" alt="" /></swiper-slide>
+      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/quadra.jpeg" /></swiper-slide>
     </swiper>
       </div>
     </section>
@@ -430,4 +430,17 @@ button {
   color: var(--orange);
 }
 
+.card-swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 800px;
+}
+
+.card-swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 </style>

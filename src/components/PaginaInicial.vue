@@ -56,7 +56,7 @@
           <router-link to="/EducacaoInfantil" class="btn-turmas" >Veja mais detalhes</router-link>
         </div>
         <div class="card-turma-03 card-turmas">
-          <img src="" alt="Novo Ensino Médio" />
+          <img src="../assets/aluna-fundamental.jpeg" alt="Novo Ensino Médio" />
           <h3>Ensino Fundamental I <br /><strong> Bilíngue </strong></h3>
           <p>
             Estimula o aprendizado e o desenvolvimento integral das crianças,
@@ -66,6 +66,8 @@
         </div>
       </div>
     </section>
+
+    <MaterialDidatico/>
 
     <!--- ABOUT SECTION --->
     <section class="about section" id="about" aria-label="Seção falando sobre a escola">
@@ -198,11 +200,11 @@
   <swiper
       :navigation="true" :pagination="true" :modules="modules" class="mySwiper"
     >
-      <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/quadra.jpeg" /></swiper-slide>
-      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/playground.jpg" alt="" /></swiper-slide>
-      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/sala.jpg" alt="" /></swiper-slide>
+    <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/carrinhos-casinha.jpeg" /></swiper-slide>
+      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/parquinho2.jpeg" /></swiper-slide>
+      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/carrinhos-casinha.jpeg" /></swiper-slide>      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/piscina.jpeg" /></swiper-slide>      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/sala.jpg" alt="" /></swiper-slide>
       <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/pingpong.jpeg" alt="" /></swiper-slide>
-      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/quadra.jpeg" /></swiper-slide>
+      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/parquinho01.jpeg" /></swiper-slide>
     </swiper>
       </div>
     </section>
@@ -306,6 +308,7 @@ import 'swiper/css';
 import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 import emailComponent from './emailComponent.vue';
 import verseComponent from './verseComponent.vue';
+import MaterialDidatico from './MaterialDidatico.vue';
 
 export default {
   name: "PaginaInicial",
@@ -314,6 +317,7 @@ export default {
     SwiperSlide,
     emailComponent,
     verseComponent,
+    MaterialDidatico,
   },
   data() {
     return {

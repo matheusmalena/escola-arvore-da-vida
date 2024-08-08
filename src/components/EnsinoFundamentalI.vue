@@ -319,6 +319,7 @@ export default {
   flex-direction: column;
   align-items: center !important;
   justify-content: center;
+  margin: 2rem 0 0 0;
 }
 
 .literatura-viva p {

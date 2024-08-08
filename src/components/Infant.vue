@@ -32,7 +32,7 @@
   </section>
 
   <section class="section bilingue">
-    <div class="card-bilingue" >
+    <div class="card-bilingue">
       <div class="bilingue-first">
         <h2>Educação Bilíngue</h2>
         <p>
@@ -60,6 +60,28 @@
         <img src="../assets/bilingue.png" alt="" />
       </div>
     </div>
+  </section>
+
+  <section class="material">
+      <div class="text-section">
+        <h2>Educação <span>Infantil</span></h2>
+        <p>
+          Na Educação Infantil, focamos no desenvolvimento integral da criança nas
+          dimensões cognitiva, física, emocional, social e cultural. Integramos essas
+          dimensões por meio de jogos, brincadeiras, rodas de conversa, momentos de
+          contação de histórias e resolução de problemas, incentivando a interação entre a
+          criança e o professor. Tudo isso é embasado em verdades e ensinamentos da fé
+          cristã reformada.
+        </p>
+      </div>
+      <div class="image-grid">
+        <img src="../assets/livro01-infant.png" alt="Imagem 1">
+            <img src="../assets/livro02-infant.png" alt="Imagem 2">
+            <img src="../assets/livro03-infant.png" alt="Imagem 3">
+            <img src="../assets/livro04-infant.png" alt="Imagem 4">
+            <img src="../assets/livro05-infant.png" alt="Imagem 5">
+            <img src="../assets/livro06-infant.png" alt="Imagem 6">
+      </div>
   </section>
 
   <TableComponent :horarios="horariosBercario" />
@@ -95,7 +117,7 @@ export default {
 
 <style scoped>
 .card-text-turmas p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .bilingue {
@@ -128,24 +150,46 @@ export default {
   align-items: center;
   width: 80%;
   gap: 1rem;
-  }
+}
 
-  .bilingue-first {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 56%;
-  }
+.bilingue-first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 56%;
+}
 
-  .bilingue-second {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-  }
+.bilingue-second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
 
-  .bilingue-second img {
-    width: 100%;
-  }
+.bilingue-second img {
+  width: 100%;
+}
+
+.text-section {
+  max-width: 40%;
+}
+
+.text-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 40%;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 </style>

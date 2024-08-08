@@ -381,14 +381,14 @@ section .title::after {
 }
 
 
-.turmas span, .services span, .proposta-card h2 span, .instagram span, .structure span{
+.turmas span, .services span, .proposta-card h2 span, .instagram span, .structure span, .material span{
   color: var(--orange);
   font-family: var(--baloo);
   font-weight: 800;
   font-size: 42px;
 }
 
-.turmas h1, .services h2, .proposta-card h2, .instagram h2, .structure h2 {
+.turmas h1, .services h2, .proposta-card h2, .instagram h2, .structure h2, .material h2 {
   color: #2c3e50;
 }
 
@@ -1252,6 +1252,15 @@ footer img {
 
 .responsive-icons {
  display: none;
+}
+
+.material {
+  background-color: var(--clean-light-gray);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
 
 

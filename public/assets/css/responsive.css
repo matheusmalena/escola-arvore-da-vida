@@ -284,6 +284,14 @@
           justify-content: center;
           width: 100% !important;
         }
+
+        .proposta-card {
+            width: 100%;
+        }
+        .proposta-card p, .proposta-card span{
+            width: 100% !important;
+            font-size: 14px;
+        }
 }
 
 @media (max-width: 690px) {

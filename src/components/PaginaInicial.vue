@@ -67,8 +67,6 @@
       </div>
     </section>
 
-    <MaterialDidatico/>
-
     <!--- ABOUT SECTION --->
     <section class="about section" id="about" aria-label="Seção falando sobre a escola">
       <div class="max-width" data-aos="fade-down">
@@ -310,7 +308,7 @@ import 'swiper/css';
 import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 import emailComponent from './emailComponent.vue';
 import verseComponent from './verseComponent.vue';
-import MaterialDidatico from './MaterialDidatico.vue';
+// import MaterialDidatico from './MaterialDidatico.vue';
 
 export default {
   name: "PaginaInicial",
@@ -319,7 +317,7 @@ export default {
     SwiperSlide,
     emailComponent,
     verseComponent,
-    MaterialDidatico,
+    // MaterialDidatico,
   },
   data() {
     return {

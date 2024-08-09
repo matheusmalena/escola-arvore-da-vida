@@ -4,15 +4,15 @@
     <div class="cards">
       <!-- Card 1 -->
       <div class="card" :class="{'active': activeCard === 0}" @mouseover="setActiveCard(0)" @mouseleave="resetActiveCard">
-        <img src="../assets/aluna-fundamental.jpeg" alt="" class="card-img">
+        <img src="../assets/aluna-fundamental-material.jpeg" alt="" class="card-img">
         <div class="card-content">
           <h2>EDUCAÇÃO INFANTIL</h2>
           <button class="btn">CONHEÇA &#x2197;</button>
         </div>
       </div>
-      <!-- Card 3 -->
+      <!-- Card 2 -->
       <div class="card" :class="{'active': activeCard === 2}" @mouseover="setActiveCard(2)" @mouseleave="resetActiveCard">
-        <img src="" alt="" class="card-img">
+        <img src="../assets/horta.jpeg" alt="" class="card-img">
         <div class="card-content">
           <h2>ENSINO FUNDAMENTAL I</h2>
           <button class="btn">CONHEÇA &#x2197;</button>
@@ -22,25 +22,21 @@
     <div class="features">
       <!-- Feature 1 -->
       <div class="feature">
-        <img src="icon_path_1.png" alt="" class="feature-icon">
         <h3>Habilidades e competências</h3>
         <p>Fomentamos a interdisciplinaridade em todas as áreas do conhecimento.</p>
       </div>
       <!-- Feature 2 -->
       <div class="feature">
-        <img src="icon_path_2.png" alt="" class="feature-icon">
         <h3>Método fônico</h3>
         <p>Utilizamos um método de alfabetização que valoriza a cultura letrada.</p>
       </div>
       <!-- Feature 3 -->
       <div class="feature">
-        <font-awesome-icon :icon="['fas', 'cross']" />
         <h3>Cosmovisão cristã aplicada</h3>
         <p>Nossa prática pedagógica é fundamentada na teologia cristã reformada.</p>
       </div>
       <!-- Feature 4 -->
       <div class="feature">
-        <img src="icon_path_4.png" alt="" class="feature-icon">
         <h3>Aprendizagem significativa</h3>
         <p>Organizamos sequências didáticas para o aluno construir o entendimento dos objetos de conhecimento de cada etapa.</p>
       </div>
@@ -77,42 +73,52 @@ export default {
   display: flex;
   justify-content: center;
   margin: 80px 0 40px 0;
-  transition: all 0.3s ease;
   gap: 1rem;
 }
 
 .card {
   position: relative;
   width: 300px;
-  height: auto;
+  height: 320px;
   overflow: hidden;
   border-radius: 10px;
   transition: all 0.3s ease;
-  transform: scale(0.9);
 }
 
 .card.active {
-  width: 30%;
-  transform: scale(1.1);
+  width: 500px;
+  height: 320px;
 }
 
 .card-img {
-  max-width: 500px;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: all 0.3s ease;
 }
 
 .card-content {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
   color: white;
   text-align: left;
 }
 
+.card-content h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
 .btn {
-  background-color: #000;
+  position: absolute;
+  top: 265px;
+  left: 0px;
+  background-color: #0000007a;
   color: white;
+  font-size: 14px;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -124,7 +130,6 @@ export default {
   background-color: #333;
 }
 
-
 .features {
   display: flex;
   justify-content: space-around;
@@ -133,8 +138,11 @@ export default {
 
 .feature {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 20%;
-  border-right: 1px solid black;
 }
 
 .feature-icon {
@@ -150,4 +158,9 @@ export default {
   font-size: 14px;
   color: gray;
 }
+
+.feature .feature-icon {
+  color: var(--orange);
+}
+
 </style>

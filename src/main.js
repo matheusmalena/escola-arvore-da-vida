@@ -13,7 +13,7 @@ import router from './router';
 // Importar os componentes necessários do Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPhone, faBars, faEnvelope, faAngleDown, faAngleUp, faCross  } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faBars, faEnvelope, faAngleDown, faAngleUp, faCross, faStar  } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 // Inicializar AOS (Animate On Scroll)
@@ -24,7 +24,7 @@ AOS.init({
 });
 
 // Adicionar ícones à biblioteca do Font Awesome
-library.add(faPhone, faBars, faWhatsapp, faInstagram, faFacebook, faEnvelope, faAngleDown, faAngleUp, faCross );
+library.add(faPhone, faBars, faWhatsapp, faInstagram, faFacebook, faEnvelope, faAngleDown, faAngleUp, faCross, faStar );
 
 const app = createApp(App);
 

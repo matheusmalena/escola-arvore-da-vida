@@ -107,19 +107,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 60% !important;
     }
 
     .matriculas-card h2 {
-        font-size: 30px;
+        font-size: 40px !important;
     }
 
     .matriculas-card p {
-        font-size: 14px;
+        font-size: 16px !important;
         text-align: center;
     }
 
     .botao-matricula {
-        font-size: 12px;
+        font-size: 14px !important;
         width: 180px;
     }
 
@@ -128,10 +129,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .carrousel-card img {
-        width: 200px;
     }
 
     .btn-menu {
@@ -292,6 +289,29 @@
             width: 100% !important;
             font-size: 14px;
         }
+
+        .material {
+            display: flex;
+            flex-direction: column !important;
+            width: 100% !important;
+        }
+
+        .text-section {
+            max-width: 80% !important;
+        }
+
+        .text-section p {
+            width: 100% !important;
+            font-size: 16px !important;
+        }
+
+        .image-grid {
+            max-width: 92% !important;
+        }
+
+        .structure {
+            padding: 0px 0 100px 0 !important;
+        }
 }
 
 @media (max-width: 690px) {
@@ -340,6 +360,11 @@
     .content-tell span {
         font-size: 12px !important;
     }
+
+    .sistema-img {
+        width: 50% !important;
+        margin: 2rem 0 0 0;
+      }
 
     .icons-forms {
         width: 32px;

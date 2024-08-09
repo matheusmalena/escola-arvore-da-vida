@@ -567,9 +567,11 @@ span {
   width: 65%;
 }
 
-.proposta-card p {
-
+.sistema-img {
+  width: 20%;
+  margin: 2rem 0 0 0;
 }
+
 
 .proposta-card span {
   width: 80%;

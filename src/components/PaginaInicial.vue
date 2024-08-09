@@ -114,6 +114,8 @@
       <span>Aqui o aluno é o protagonista do seu aprendizado; o professor, o mediador e a aprendizagem é sem limites.
         Para uma nova geração, uma nova proposta de educação.</span>
     </div>
+
+    <img class="sistema-img" src="../assets/mackenziesite2-removebg-preview.png" alt="">
   </section>
 
     <!-- SERVICES SECTION -->
@@ -356,6 +358,10 @@ export default {
 
 <style>
 
+.instagram {
+  background-color: var(--clean-light-gray);
+}
+
 .instagram-wrapper {
   max-width: 100% !important;
   display: flex !important;
@@ -398,7 +404,7 @@ export default {
 }
 
 .instagram-gallery-item::after {
-  content: '\f16d'; /* Unicode do ícone do Instagram no FontAwesome */
+  content: '\f16d';
   font-family: 'Font Awesome 5 Brands';
   position: absolute !important;
   top: 50% !important;
@@ -408,7 +414,7 @@ export default {
   color: white !important;
   opacity: 0 !important;
   transition: opacity 0.3s !important;
-  pointer-events: none !important; /* Evita interferir no hover */
+  pointer-events: none !important;
 }
 
 .instagram-gallery-item:hover::after {

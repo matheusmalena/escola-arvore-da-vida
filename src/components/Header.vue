@@ -310,12 +310,5 @@ export default {
     z-index: 999;
   }
 
-  .submenu {
-    color: var(--yellow) !important;
-  }
-
-  .submenu:hover {
-    color: var(--yellow-hover) !important;
-  }
 }
 </style>

@@ -63,6 +63,7 @@
   </section>
 
   <section class="material">
+    <div class="material-div">
       <div class="text-section">
         <h2>Educação <span>Infantil</span></h2>
         <p>
@@ -75,13 +76,44 @@
         </p>
       </div>
       <div class="image-grid">
-        <img src="../assets/livro01-infant.png" alt="Imagem 1">
-            <img src="../assets/livro02-infant.png" alt="Imagem 2">
-            <img src="../assets/livro03-infant.png" alt="Imagem 3">
-            <img src="../assets/livro04-infant.png" alt="Imagem 4">
-            <img src="../assets/livro05-infant.png" alt="Imagem 5">
-            <img src="../assets/livro06-infant.png" alt="Imagem 6">
+        <img src="../assets/livro01-infant.png" alt="Imagem 1" />
+        <img src="../assets/livro02-infant.png" alt="Imagem 2" />
+        <img src="../assets/livro03-infant.png" alt="Imagem 3" />
+        <img src="../assets/livro04-infant.png" alt="Imagem 4" />
+        <img src="../assets/livro05-infant.png" alt="Imagem 5" />
+        <img src="../assets/livro06-infant.png" alt="Imagem 6" />
       </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <img src="imagem1.jpg" alt="Alfabetização" />
+        <h3><span class="title-strong">Alfabetização, literacia e numeracia</span></h3>
+        <p>
+          Práticas que promovem habilidades de leitura e escrita (com sistema alfabético,
+          para participação na cultura letrada) e de matemática (para solução de problemas
+          envolvendo quantidade, padrão e sequência).
+        </p>
+      </div>
+      <div class="card">
+        <img src="imagem2.jpg" alt="Concepção de infância" />
+        <h3><span class="title-strong">Concepção de infância</span></h3>
+        <p>
+          Foco no desenvolvimento infantil, com ênfase na promoção de atividades que
+          valorizem a infância, com base nos direitos de aprendizagem destacados na Base
+          Nacional Comum Curricular.
+        </p>
+      </div>
+      <div class="card">
+        <img src="imagem3.jpg" alt="Literatura Viva" />
+        <h3><span class="title-strong">Literatura Viva</span></h3>
+        <p>
+          Projeto de leitura com seleção de obras literárias guiada pela proposta
+          pedagógica do Sistema Mackenzie de Ensino e material com atividades para
+          desenvolvimento de proficiência leitora.
+        </p>
+      </div>
+    </div>
   </section>
 
   <TableComponent :horarios="horariosBercario" />
@@ -191,5 +223,60 @@ export default {
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.material {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.material-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 30%;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h3 {
+  color: var(--orange);
+  margin: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card p {
+  color: #555;
+  margin: 0 15px 15px;
+  font-size: 16px;
+}
+
+.card .title-strong {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 28px;
 }
 </style>

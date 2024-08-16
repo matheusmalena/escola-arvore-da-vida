@@ -87,7 +87,7 @@
 
     <div class="card-container">
       <div class="card">
-        <img src="imagem1.jpg" alt="Alfabetização" />
+        <img src="../assets/estudando-costas.jpeg" alt="Alfabetização" />
         <h3><span class="title-strong">Alfabetização, literacia e numeracia</span></h3>
         <p>
           Práticas que promovem habilidades de leitura e escrita (com sistema alfabético,
@@ -96,7 +96,7 @@
         </p>
       </div>
       <div class="card">
-        <img src="imagem2.jpg" alt="Concepção de infância" />
+        <img src="../assets/dupla-estudando.jpeg" alt="Concepção de infância" />
         <h3><span class="title-strong">Concepção de infância</span></h3>
         <p>
           Foco no desenvolvimento infantil, com ênfase na promoção de atividades que
@@ -105,7 +105,7 @@
         </p>
       </div>
       <div class="card">
-        <img src="imagem3.jpg" alt="Literatura Viva" />
+        <img src="../assets/trio-estudando.jpeg" alt="Literatura Viva" />
         <h3><span class="title-strong">Literatura Viva</span></h3>
         <p>
           Projeto de leitura com seleção de obras literárias guiada pela proposta

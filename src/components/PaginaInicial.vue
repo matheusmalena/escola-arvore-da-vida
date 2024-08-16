@@ -202,9 +202,10 @@
     >
     <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/carrinhos-casinha.jpeg" /></swiper-slide>
       <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/parquinho2.jpeg" /></swiper-slide>
-      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/carrinhos-casinha.jpeg" /></swiper-slide>      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/piscina.jpeg" /></swiper-slide>      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/sala.jpg" alt="" /></swiper-slide>
+      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/refeitorio.jpeg" /></swiper-slide>      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/piscina.jpeg" /></swiper-slide>      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/sala.jpg" alt="" /></swiper-slide>
       <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/pingpong.jpeg" alt="" /></swiper-slide>
       <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/parquinho01.jpeg" /></swiper-slide>
+      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/piscina.jpeg" /></swiper-slide>
     </swiper>
       </div>
     </section>

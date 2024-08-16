@@ -210,81 +210,6 @@
       </div>
     </section>
 
-    <!--- CERTIFICATES SECTION --->
-    <!-- <section
-      class="conquest section"
-      id="certificates"
-      aria-label="uma seção mostrando os meus certificados do meu aprendizado."
-    >
-      <div class="max-width" data-aos="fade-down">
-        <div>
-          <h2 class="title">Minhas Conquistas</h2>
-        </div>
-
-        <div class="carousel owl-carousel">
-          <div class="card">
-            <a
-              href="https://cursos.alura.com.br/degree/certificate/1244f4a2-7b6b-4cfa-a0e9-7a07bed262bb"
-              ><img src="" alt="Certificado HTML"
-            /></a>
-          </div>
-
-          <div class="card">
-            <a
-              href="https://cursos.alura.com.br/degree/certificate/f36bf34c-fd7e-4326-9d59-45b03c4ff385"
-              ><img src="" alt="Certificado DESENVOLVA APLICAÇÕES WEB COM JAVASCRIPT"
-            /></a>
-          </div>
-
-          <div class="card">
-            <a
-              href="https://cursos.alura.com.br/certificate/e77a674a-4527-4715-95a4-71b145fce611"
-              ><img
-                src=""
-                href="https://cursos.alura.com.br/certificate/e77a674a-4527-4715-95a4-71b145fce611"
-                alt="GIT E GITHUB: REPOSITÓRIO, COMMIT E VERSÕES"
-            /></a>
-          </div>
-
-          <div class="card">
-            <a
-              href="https://cursos.alura.com.br/degree/certificate/6f36049a-25b7-4b6a-ab98-42e3324faa3a"
-              ><img src="" alt="Certificado Linux"
-            /></a>
-          </div>
-
-          <div class="card">
-            <a
-              href="https://cursos.alura.com.br/degree/certificate/4a40261c-7c41-476f-8397-b67c1b830da0"
-              ><img src="" alt="Certificado Bootstrap"
-            /></a>
-          </div>
-
-          <div class="card">
-            <a
-              href="https://cursos.alura.com.br/certificate/matheus-tew-one/arquitetura-computadores-funcionamento-programa"
-              ><img src="" alt="Certificado ARQUITETURA DE COMPUTADORES"
-            /></a>
-          </div>
-
-          <div class="card">
-            <a
-              href="https://cursos.alura.com.br/certificate/df42bfc0-c7d5-4cf4-b7a5-7e768eb1c281"
-              ><img src="" alt="Certificado DNS"
-            /></a>
-          </div>
-
-          <div class="card">
-            <a
-              href="https://cursos.alura.com.br/certificate/matheus-tew-one/logica-programacao-javascript-html"
-              ><img src="" alt="Certificado HTML"
-            /></a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    
-
     <section class="instagram">
       <h2>Siga nossa página no <span>Instagram</span> </h2>
     <div class="instagram-wrapper">
@@ -309,6 +234,7 @@ import 'swiper/css';
 import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 import emailComponent from './emailComponent.vue';
 import verseComponent from './verseComponent.vue';
+import InstagramFeed from './InstagramFeed.vue';
 // import MaterialDidatico from './MaterialDidatico.vue';
 
 export default {
@@ -318,6 +244,7 @@ export default {
     SwiperSlide,
     emailComponent,
     verseComponent,
+    InstagramFeed
     // MaterialDidatico,
   },
   data() {
@@ -452,4 +379,5 @@ button {
   width: 100%;
   height: auto;
 }
+
 </style>

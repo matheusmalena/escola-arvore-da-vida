@@ -38,7 +38,7 @@
                   <a  href=""  class="icons-forms icon-tell"><font-awesome-icon :icon="['fas', 'phone']" /></a>
                 <div class="d-flex flex-row">
                   <div class="d-flex justify-content-center align-items-center"></div>
-                  <div class="d-flex flex-column m-2 content-tell">
+                  <div class="d-flex flex-column m-2 content-tell align-items-center justify-content-center">
                     <span>(13) 3453-4922</span>
                   </div>
                 </div>

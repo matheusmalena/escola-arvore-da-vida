@@ -110,30 +110,41 @@ export default {
 
 <style scoped>
 .instagram-wrapper {
-  max-width: 93.5rem;
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: flex;
-  flex-direction: column;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: var(--clean-light-gray) !important;
+  padding: 1rem 0 !important;
 }
 .instagram-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -1rem;
-  padding-bottom: 3rem;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  padding-bottom: 3rem !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 1rem;
 }
 .instagram-gallery-item {
-  position: relative;
-  flex: 1 0 22rem;
-  margin: 1rem;
-  color: #fff;
-  cursor: pointer;
+  position: relative !important;
+  flex: 0 0 298.4px !important;
+  height: 298.4px !important;
+  border: 1px solid #ddd !important;
+  border-radius: 5px !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  transition: transform 0.3s !important;
 }
+
 .instagram-gallery-image {
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: opacity 0.3s !important;
 }
+
 .instagram-caption {
   color: black;
   margin-top: -3px;
@@ -157,5 +168,34 @@ export default {
   100% {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (max-width: 947px) {
+  .instagram-gallery {
+  display: flex !important;
+  flex-direction: column !important;
+  padding-bottom: 3rem !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 1rem;
+}
+
+.instagram-gallery-item {
+  position: relative !important;
+  width: 298.4px !important;
+  height: 298.4px !important;
+  border: 1px solid #ddd !important;
+  border-radius: 5px !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  transition: transform 0.3s !important;
+}
+
+.instagram-gallery-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: opacity 0.3s !important;
+}
 }
 </style>

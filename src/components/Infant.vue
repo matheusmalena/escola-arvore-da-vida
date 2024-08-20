@@ -87,7 +87,7 @@
 
     <div class="card-container">
       <div class="card">
-        <img src="../assets/estudando-costas.jpeg" alt="Alfabetização" />
+        <img src="../assets/menina-infant.jpeg" alt="Alfabetização" />
         <h3><span class="title-strong">Alfabetização, literacia e numeracia</span></h3>
         <p>
           Práticas que promovem habilidades de leitura e escrita (com sistema alfabético,
@@ -96,7 +96,7 @@
         </p>
       </div>
       <div class="card">
-        <img src="../assets/dupla-estudando.jpeg" alt="Concepção de infância" />
+        <img src="../assets/infant-turma2.jpeg" alt="Concepção de infância" />
         <h3><span class="title-strong">Concepção de infância</span></h3>
         <p>
           Foco no desenvolvimento infantil, com ênfase na promoção de atividades que

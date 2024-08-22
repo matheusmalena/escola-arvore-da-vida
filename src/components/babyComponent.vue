@@ -3,6 +3,7 @@
 
   <img src="" alt="" />
 
+
   <section class="section card-component-turmas">
     <div class="card-text-turmas">
       <h2>Berçario</h2>
@@ -14,9 +15,10 @@
         Oferecemos carinho, segurança e aceitação. Atividades únicas, ambiente seguro e
         projetado exclusivamente para essa fase da vida de seu filho.
       </p>
+      <button class="btn-agendar">Agende uma visita <font-awesome-icon :icon="['fab', 'whatsapp']" /></button>
     </div>
     <div class="card-img-turmas">
-      <img src="../assets/transito.jpg" alt="">
+      <img src="../assets/menino-baby.jpeg" alt="">
     </div>
   </section>
 

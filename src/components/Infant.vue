@@ -25,6 +25,7 @@
         valorizada e segura para expressar suas ideias e sentimentos. Venha fazer parte
         dessa aventura conosco!
       </p>
+      <button class="btn-agendar">Agende uma visita <font-awesome-icon :icon="['fab', 'whatsapp']" /></button>
     </div>
     <div class="card-img-turmas">
       <img src="../assets/transito.jpg" alt="" />
@@ -105,7 +106,7 @@
         </p>
       </div>
       <div class="card">
-        <img src="../assets/trio-estudando.jpeg" alt="Literatura Viva" />
+        <img src="../assets/mesa-infant.jpeg" alt="Literatura Viva" />
         <h3><span class="title-strong">Literatura Viva</span></h3>
         <p>
           Projeto de leitura com seleção de obras literárias guiada pela proposta
@@ -279,4 +280,5 @@ export default {
   font-weight: bold;
   font-size: 28px;
 }
+
 </style>

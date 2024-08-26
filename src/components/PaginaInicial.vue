@@ -48,7 +48,7 @@
         </div>
         <div class="card-turma-02 card-turmas">
           <img src="../assets/foto-2.jpg" alt="Ensino Fundamental I" />
-          <h3>Educação Infantil <br /><strong>Bilíngue</strong></h3>
+          <h3>Educação Infantil<br /><strong>Bilíngue</strong></h3>
           <p>
             Destina-se à formação da criança visando o desenvolvimento integral e
             harmonioso de suas potencialidades.
@@ -57,7 +57,7 @@
         </div>
         <div class="card-turma-03 card-turmas">
           <img src="../assets/aluna-fundamental.jpeg" alt="Novo Ensino Médio" />
-          <h3>Ensino Fundamental I <br /><strong> Bilíngue </strong></h3>
+          <h3>Ensino Fundamental I<br/><strong>Bilíngue</strong></h3>
           <p>
             Estimula o aprendizado e o desenvolvimento integral das crianças,
             preparando-as para um futuro de descobertas e conquistas.

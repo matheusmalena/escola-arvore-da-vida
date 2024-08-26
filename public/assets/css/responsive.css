@@ -424,6 +424,26 @@
         overflow: hidden;
         height: 220px !important;
       }
+
+      .card-turmas {
+        height: auto !important;
+      }
+
+      .card-turmas p {
+        font-size: 14px;
+      }
+
+      .card-turmas h3 {
+        font-size: 24px;
+      }
+
+      .card-turma-03 h3 {
+        font-size:  20px !important;
+      }
+
+      .card-turma-03 h3 strong {
+        font-size:  24px !important;
+      }
 }
 
 @media (max-width: 500px) {

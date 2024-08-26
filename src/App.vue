@@ -1,20 +1,48 @@
 <template>
-  <Header/>
-  <router-view/>
-  <Footer/>
+  <div id="app">
+    <Loading v-if="isLoading" />
+    <div v-else>
+      <Header />
+      <router-view />
+      <Footer />
+    </div>
+  </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue';
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
+import Loading from "./components/Loading.vue";
+import { ref, onMounted } from 'vue';
+
+const loadResources = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, 2000);
+  });
+};
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
     Footer,
-  }
-}
+    Loading
+  },
+  setup() {
+    const isLoading = ref(true);
+
+    onMounted(async () => {
+      await loadResources();
+      isLoading.value = false;
+    });
+
+    return {
+      isLoading,
+    };
+  },
+};
 </script>
 
 <style>
@@ -50,5 +78,4 @@ export default {
   --poppins: "Poppins", sans-serif;
   --baloo: "Baloo 2", sans-serif;
 }
-
 </style>

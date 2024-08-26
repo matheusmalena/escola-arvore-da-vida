@@ -21,9 +21,10 @@
         da tolerância, integrando conhecimentos sobre o ambiente natural e social, sistema
         político, tecnologia, artes e valores essenciais para a vida em sociedade.
       </p>
+      <button class="btn-agendar">Agende uma visita  <font-awesome-icon :icon="['fab', 'whatsapp']" /></button>
     </div>
     <div class="card-img-turmas">
-      <img src="../assets/transito.jpg" alt="" />
+      <img src="../assets/5ano.jpeg" alt="" />
     </div>
   </section>
 
@@ -98,7 +99,7 @@
       <section class="content-section">
         <div class="content-wrapper-metodo-fonico">
           <div class="image-section">
-            <img src="../assets/metodo-fonico.png" alt="Método Fônico" />
+            <img src="../assets/trio-estudando.jpeg" alt="Método Fônico" />
           </div>
           <div class="text-section">
             <h4>MÉTODO <span>FÔNICO</span></h4>
@@ -332,6 +333,11 @@ export default {
 
 .book-gallery-responsive {
   display: none;
+}
+
+.literatura-viva img {
+  width: 800px;
+  height: auto;
 }
 
 @media (max-width: 947px) {

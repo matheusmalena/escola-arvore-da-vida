@@ -267,6 +267,30 @@ html {
   gap: 0.5rem;
 }
 
+.btn-agendar {
+background-color: var(--first-color);
+border: 1px solid var(--first-color);
+border-radius: 6rem;
+text-decoration: none;
+color: var(--color-white);
+padding: 0.8rem;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0.6rem;
+}
+
+.btn-agendar:hover {
+background-color: var(--light-green);
+border: 1px solid var(--light-green);
+border-radius: 6rem;
+padding: 0.8rem;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0.6rem;
+}
+
 .carrousel-card {
   width: 100%;
   max-height: 80px;
@@ -1340,14 +1364,20 @@ footer img {
 }
 
 .card-img-turmas {
-  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
 }
 
-.card-img-turmas img{
-  width: 80%;
+.card-img-turmas img {
+  max-width: 100%;
+  max-height: 500px;
   height: auto;
+  width: auto;
   border: 1px solid var(--orange);
   border-radius: 1rem;
+  object-fit: cover; /* This will ensure the image covers the area without distortion */
 }
 
 .btn-turmas {

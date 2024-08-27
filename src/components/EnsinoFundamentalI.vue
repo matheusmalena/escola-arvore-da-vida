@@ -24,7 +24,16 @@
       <button class="btn-agendar">Agende uma visita  <font-awesome-icon :icon="['fab', 'whatsapp']" /></button>
     </div>
     <div class="card-img-turmas">
-      <img src="../assets/5ano.jpeg" alt="" />
+      <swiper :navigation="true" :pagination="true" :modules="modules" class="mySwiper">
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/5ano.jpeg" /></swiper-slide>
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/parquinho2.jpeg" /></swiper-slide>
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/refeitorio.jpeg" /></swiper-slide>
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/piscina.jpeg" /></swiper-slide>
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/sala.jpg" alt="" /></swiper-slide>
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/pingpong.jpeg" alt="" /></swiper-slide>
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/parquinho01.jpeg" /></swiper-slide>
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/piscina.jpeg" /></swiper-slide>
+      </swiper>
     </div>
   </section>
 
@@ -136,10 +145,9 @@
 <script>
 import EmailComponent from "./emailComponent.vue";
 import TableComponent from "./TableComponent.vue";
-import { Swiper, SwiperSlide } from "swiper/vue";
-import SwiperCore, { Pagination } from "swiper";
-
-SwiperCore.use([Pagination]);
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -169,6 +177,11 @@ export default {
         { src: require("../assets/livro06-fundamental.png"), alt: "Imagem 6" },
         { src: require("../assets/livro07-fundamental.png"), alt: "Imagem 7" },
       ],
+    };
+  },
+  setup() {
+    return {
+      modules: [Autoplay, Navigation, Pagination],
     };
   },
 };
@@ -245,6 +258,37 @@ export default {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+
+.card-component-turmas {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+  .card-text-turmas {
+  width: 50%;
+}
+
+.card-img-turmas {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-swiper-slide {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .book-gallery {

@@ -1,9 +1,6 @@
 <template>
   <div class="green"></div>
 
-  <img src="" alt="" />
-
-
   <section class="section card-component-turmas">
     <div class="card-text-turmas">
       <h2>Berçario</h2>
@@ -18,7 +15,16 @@
       <button class="btn-agendar">Agende uma visita <font-awesome-icon :icon="['fab', 'whatsapp']" /></button>
     </div>
     <div class="card-img-turmas">
-      <img src="../assets/menino-baby.jpeg" alt="">
+      <swiper :navigation="true" :pagination="true" :modules="modules" class="mySwiper">
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/carrinhos-casinha.jpeg" /></swiper-slide>
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/parquinho2.jpeg" /></swiper-slide>
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/refeitorio.jpeg" /></swiper-slide>
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/piscina.jpeg" /></swiper-slide>
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/sala.jpg" alt="" /></swiper-slide>
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/pingpong.jpeg" alt="" /></swiper-slide>
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/parquinho01.jpeg" /></swiper-slide>
+        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/piscina.jpeg" /></swiper-slide>
+      </swiper>
     </div>
   </section>
 
@@ -59,6 +65,9 @@
 <script>
 import EmailComponent from "./emailComponent.vue";
 import TableComponent from "./TableComponent.vue";
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -66,6 +75,8 @@ export default {
   components: {
     EmailComponent,
     TableComponent,
+    Swiper,
+    SwiperSlide,
   },
   data() {
     return {
@@ -73,6 +84,11 @@ export default {
         { periodo: "Meio período", horario: "13h às 17h" },
         { periodo: "Integral", horario: "8h ás 18h" },
       ],
+    };
+  },
+  setup() {
+    return {
+      modules: [Autoplay, Navigation, Pagination],
     };
   },
 };
@@ -129,4 +145,36 @@ export default {
   .bilingue-second img {
     width: 100%;
   }
+
+  .card-component-turmas {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+  .card-text-turmas {
+  width: 50%;
+}
+
+.card-img-turmas {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-swiper-slide {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 </style>

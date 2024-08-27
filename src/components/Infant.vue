@@ -117,6 +117,17 @@
     </div>
   </section>
 
+  <swiper
+      :navigation="true" :pagination="true" :modules="modules" class="mySwiper"
+    >
+    <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/carrinhos-casinha.jpeg" /></swiper-slide>
+      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/parquinho2.jpeg" /></swiper-slide>
+      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/refeitorio.jpeg" /></swiper-slide>      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/piscina.jpeg" /></swiper-slide>      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/sala.jpg" alt="" /></swiper-slide>
+      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/pingpong.jpeg" alt="" /></swiper-slide>
+      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/parquinho01.jpeg" /></swiper-slide>
+      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/piscina.jpeg" /></swiper-slide>
+    </swiper>
+
   <TableComponent :horarios="horariosBercario" />
 
   <EmailComponent />
@@ -125,6 +136,9 @@
 <script>
 import EmailComponent from "./emailComponent.vue";
 import TableComponent from "./TableComponent.vue";
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -132,6 +146,8 @@ export default {
   components: {
     EmailComponent,
     TableComponent,
+    Swiper,
+    SwiperSlide,
   },
   data() {
     return {
@@ -143,6 +159,11 @@ export default {
         { periodo: "Ballet", horario: "17h30 ás 18h30 - (Quarta-feira)" },
         { periodo: "Judô", horario: "17h40 ás 18h30 - (Quinta-feira)" },
       ],
+    };
+  },
+  setup() {
+    return {
+      modules: [Autoplay, Navigation, Pagination],
     };
   },
 };
@@ -258,6 +279,7 @@ export default {
 
 .card img {
   width: 100%;
+  max-height: 207.73px;
   height: auto;
   display: block;
 }

@@ -60,6 +60,8 @@
         <i class="fa fa-times"></i>
       </div>
       <ul class="sidebar-menu">
+        <li><router-link to="/"
+          @click="closeSidebar" >Inicial</router-link></li>
         <li>
           <a href="#turmas" @click="toggleSubmenu('turmas')"
             >Turmas

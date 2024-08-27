@@ -498,6 +498,10 @@
     .image-grid {
         grid-template-columns: repeat(2, 1fr) !important;
     }
+
+    .card-component-turmas p {
+        text-align: center;
+    }
 }
 
 @media (max-width: 500px) {

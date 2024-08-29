@@ -27,19 +27,42 @@
         valorizada e segura para expressar suas ideias e sentimentos. Venha fazer parte
         dessa aventura conosco!
       </p>
-      <button class="btn-agendar">Agende uma visita <font-awesome-icon :icon="['fab', 'whatsapp']" /></button>
+      <button class="btn-agendar">
+        Agende uma visita <font-awesome-icon :icon="['fab', 'whatsapp']" />
+      </button>
     </div>
     <div class="card-img-turmas">
-      <!-- <swiper :navigation="true" :pagination="true" :modules="modules" class="mySwiper">
-        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/transito.jpg" /></swiper-slide>
-        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/parquinho2.jpeg" /></swiper-slide>
-        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/refeitorio.jpeg" /></swiper-slide>
-        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/piscina.jpeg" /></swiper-slide>
-        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/sala.jpg" alt="" /></swiper-slide>
-        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/pingpong.jpeg" alt="" /></swiper-slide>
-        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/parquinho01.jpeg" /></swiper-slide>
-        <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/piscina.jpeg" /></swiper-slide>
-      </swiper> -->
+      <swiper
+        :navigation="true"
+        :pagination="true"
+        :modules="modules"
+        class="turmaSwiper"
+      >
+        <swiper-slide class="turma-swiper-slide">
+          <img class="turma-img-carrousel" src="../assets/transito.jpg" />
+        </swiper-slide>
+        <swiper-slide class="turma-swiper-slide">
+          <img class="turma-img-carrousel" src="../assets/parquinho2.jpeg" />
+        </swiper-slide>
+        <swiper-slide class="turma-swiper-slide">
+          <img class="turma-img-carrousel" src="../assets/refeitorio.jpeg" />
+        </swiper-slide>
+        <swiper-slide class="turma-swiper-slide">
+          <img class="turma-img-carrousel" src="../assets/piscina.jpeg" />
+        </swiper-slide>
+        <swiper-slide class="turma-swiper-slide">
+          <img class="turma-img-carrousel" src="../assets/sala.jpg" alt="" />
+        </swiper-slide>
+        <swiper-slide class="turma-swiper-slide">
+          <img class="turma-img-carrousel" src="../assets/pingpong.jpeg" alt="" />
+        </swiper-slide>
+        <swiper-slide class="turma-swiper-slide">
+          <img class="turma-img-carrousel" src="../assets/parquinho01.jpeg" />
+        </swiper-slide>
+        <swiper-slide class="turma-swiper-slide">
+          <img class="turma-img-carrousel" src="../assets/piscina.jpeg" />
+        </swiper-slide>
+      </swiper>
     </div>
   </section>
 
@@ -128,16 +151,32 @@
     </div>
   </section>
 
-  <swiper
-      :navigation="true" :pagination="true" :modules="modules" class="mySwiper"
-    >
-    <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/carrinhos-casinha.jpeg" /></swiper-slide>
-      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/parquinho2.jpeg" /></swiper-slide>
-      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/refeitorio.jpeg" /></swiper-slide>      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/piscina.jpeg" /></swiper-slide>      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/sala.jpg" alt="" /></swiper-slide>
-      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/pingpong.jpeg" alt="" /></swiper-slide>
-      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/parquinho01.jpeg" /></swiper-slide>
-      <swiper-slide class="card-swiper-slide" ><img class="img-carrousel-estruture" src="../assets/piscina.jpeg" /></swiper-slide>
-    </swiper>
+  <swiper :navigation="true" :pagination="true" :modules="modules" class="mySwiper">
+    <swiper-slide class="card-swiper-slide"
+      ><img class="img-carrousel-estruture" src="../assets/carrinhos-casinha.jpeg"
+    /></swiper-slide>
+    <swiper-slide class="card-swiper-slide"
+      ><img class="img-carrousel-estruture" src="../assets/parquinho2.jpeg"
+    /></swiper-slide>
+    <swiper-slide class="card-swiper-slide"
+      ><img class="img-carrousel-estruture" src="../assets/refeitorio.jpeg"
+    /></swiper-slide>
+    <swiper-slide class="card-swiper-slide"
+      ><img class="img-carrousel-estruture" src="../assets/piscina.jpeg"
+    /></swiper-slide>
+    <swiper-slide class="card-swiper-slide"
+      ><img class="img-carrousel-estruture" src="../assets/sala.jpg" alt=""
+    /></swiper-slide>
+    <swiper-slide class="card-swiper-slide"
+      ><img class="img-carrousel-estruture" src="../assets/pingpong.jpeg" alt=""
+    /></swiper-slide>
+    <swiper-slide class="card-swiper-slide"
+      ><img class="img-carrousel-estruture" src="../assets/parquinho01.jpeg"
+    /></swiper-slide>
+    <swiper-slide class="card-swiper-slide"
+      ><img class="img-carrousel-estruture" src="../assets/piscina.jpeg"
+    /></swiper-slide>
+  </swiper>
 
   <TableComponent :horarios="horariosBercario" />
 
@@ -147,9 +186,9 @@
 <script>
 import EmailComponent from "./emailComponent.vue";
 import TableComponent from "./TableComponent.vue";
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-import { Navigation, Autoplay, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -314,4 +353,24 @@ export default {
   font-size: 28px;
 }
 
+.turma-swiper-slide {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.turma-img-carrousel {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-img-turmas {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>

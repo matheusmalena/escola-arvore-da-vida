@@ -1,7 +1,9 @@
 <template>
   <div class="green"></div>
 
-  <img src="" alt="" />
+  <div class="banner">
+    <img src="../assets/3.png" alt="" />
+  </div>
 
   <section class="section card-component-turmas">
     <div class="card-text-turmas">
@@ -28,7 +30,7 @@
       <button class="btn-agendar">Agende uma visita <font-awesome-icon :icon="['fab', 'whatsapp']" /></button>
     </div>
     <div class="card-img-turmas">
-      <swiper :navigation="true" :pagination="true" :modules="modules" class="mySwiper">
+      <!-- <swiper :navigation="true" :pagination="true" :modules="modules" class="mySwiper">
         <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/transito.jpg" /></swiper-slide>
         <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/parquinho2.jpeg" /></swiper-slide>
         <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/refeitorio.jpeg" /></swiper-slide>
@@ -37,7 +39,7 @@
         <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/pingpong.jpeg" alt="" /></swiper-slide>
         <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/parquinho01.jpeg" /></swiper-slide>
         <swiper-slide class="card-swiper-slide"><img class="img-carrousel-estruture" src="../assets/piscina.jpeg" /></swiper-slide>
-      </swiper>
+      </swiper> -->
     </div>
   </section>
 

@@ -1,7 +1,9 @@
 <template>
   <div class="green"></div>
 
-  <img src="" alt="" />
+  <div class="banner">
+    <img src="../assets/4.png" alt="" />
+  </div>
 
   <section class="section card-component-turmas">
     <div class="card-text-turmas">

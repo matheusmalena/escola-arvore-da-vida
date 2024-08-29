@@ -1,6 +1,10 @@
 <template>
   <div class="green"></div>
 
+  <div class="banner">
+    <img src="../assets/2.png" alt="" />
+  </div>
+
   <section class="section card-component-turmas">
     <div class="card-text-turmas">
       <h2>Berçario</h2>
@@ -150,6 +154,7 @@ export default {
   display: flex;
   flex-direction: row;
   width: 100%;
+  padding: 0 0 100px 0;
 }
 
   .card-text-turmas {

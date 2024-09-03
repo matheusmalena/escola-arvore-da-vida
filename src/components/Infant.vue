@@ -27,9 +27,7 @@
         valorizada e segura para expressar suas ideias e sentimentos. Venha fazer parte
         dessa aventura conosco!
       </p>
-      <button class="btn-agendar">
-        Agende uma visita <font-awesome-icon :icon="['fab', 'whatsapp']" />
-      </button>
+      <a href="https://wa.me/5511972216682" target="_blank" ><button class="btn-agendar"> Agende uma visita <font-awesome-icon :icon="['fab', 'whatsapp']" /></button></a>
     </div>
     <div class="card-img-turmas">
       <swiper
@@ -329,9 +327,8 @@ export default {
 
 .card img {
   width: 100%;
-  max-height: 207.73px;
-  height: auto;
-  display: block;
+  height: 200px; 
+  object-fit: cover;
 }
 
 .card h3 {
@@ -362,9 +359,9 @@ export default {
 }
 
 .turma-img-carrousel {
-  display: block;
+  height: 500px;
   width: 100%;
-  height: auto;
+  object-fit: cover;
 }
 
 .card-img-turmas {

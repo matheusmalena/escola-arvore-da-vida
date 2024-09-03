@@ -276,7 +276,7 @@ html {
   width: auto;
   border: 1px solid var(--orange);
   border-radius: 1rem;
-  object-fit: cover; /* This will ensure the image covers the area without distortion */
+  object-fit: cover;
 }
 
 .carrousel-card {
@@ -287,6 +287,10 @@ html {
   align-items: center !important;
   justify-content: center;
   margin-top: 3rem;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 
@@ -333,7 +337,7 @@ html {
   display: flex;
   justify-content: center !important;
   align-items: center !important;
-  padding: 3rem 0;
+  padding: 5rem 0 0 0;
 }
 
 .banner img {
@@ -658,13 +662,11 @@ span {
   z-index: 50;
   margin: 15px 0;
   position: relative;
-  border: 1px solid var(--first-color);
   border-radius: 30px;
 }
 
 .services .serv-content .card:hover {
   transform: scale(1.05) translateY(-5px);
-  border: 2px solid var(--first-color);
 }
 
 .services .serv-content .card .box {
@@ -692,7 +694,6 @@ span {
   height: auto;
   max-height: 390px;
   object-fit: cover;
-  border: 1px solid white;
   border-radius: 30px;
 }
 

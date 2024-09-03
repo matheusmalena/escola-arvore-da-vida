@@ -23,7 +23,7 @@
         da tolerância, integrando conhecimentos sobre o ambiente natural e social, sistema
         político, tecnologia, artes e valores essenciais para a vida em sociedade.
       </p>
-      <button class="btn-agendar">Agende uma visita  <font-awesome-icon :icon="['fab', 'whatsapp']" /></button>
+      <a href="https://wa.me/5511972216682" target="_blank" ><button class="btn-agendar"> Agende uma visita <font-awesome-icon :icon="['fab', 'whatsapp']" /></button></a>
     </div>
     <div class="card-img-turmas">
       <swiper :navigation="true" :pagination="true" :modules="modules" class="mySwiper">
@@ -277,6 +277,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem 0;
 }
 
 .card-swiper-slide {
@@ -290,7 +291,7 @@ export default {
 .card-swiper-slide img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 500px;
 }
 
 .book-gallery {

@@ -57,7 +57,7 @@
         </div>
         <div class="card-turma-03 card-turmas">
           <img src="../assets/aluna-fundamental.jpeg" alt="Novo Ensino Médio" />
-          <h3>Ensino Fundamental I<br/><strong>Bilíngue</strong></h3>
+          <h3>Fundamental I<br/><strong>Bilíngue</strong></h3>
           <p>
             Estimula o aprendizado e o desenvolvimento integral das crianças,
             preparando-as para um futuro de descobertas e conquistas.
@@ -126,17 +126,6 @@
       <div class="max-width">
         <div data-aos="fade-down">
           <h2>Atividades <span>Extracurriculares</span></h2>
-          <!-- <p class="text-center">
-            Com o objetivo de melhorar a formação do aluno, o estabelecimento de ensino
-            Escola Árvore da Vida oferece atividades extracurriculares para despertar o
-            talento dos estudantes, aprimorando o desempenho em sala de aula. O trabalho
-            de estímulo cognitivo em diferentes áreas, apresenta um ganho significativo no
-            desenvolvimento integral do indivíduo. Os estudantes praticam com mais
-            frequência as expressões corporais, e tornam-se mais críticos, participativos,
-            proporcionando lições como: autonomia, tolerância, respeito, e o
-            reconhecimento de ponto de vista de outras pessoas. Confira algumas das
-            práticas interdisciplinares mais comuns que são oferecidas na escola:
-          </p> -->
         </div>
         <div class="serv-content" data-aos="zoom-in-up">
           <div class="card" style="width: 18rem">

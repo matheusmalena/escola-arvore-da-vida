@@ -150,7 +150,7 @@
             <img src="../assets/fut.png" class="card-box-img" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Futebol</h5>
-              <p class="card-text">Paixão no gramado, união no jogo.</p>
+              <p class="card-text">Transformando paixão em técnica e jogo coletivo</p>
               <a href="#" class="btn btn-primary">Saiba mais!</a>
             </div>
           </div>

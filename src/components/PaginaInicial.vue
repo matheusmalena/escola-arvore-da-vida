@@ -172,6 +172,17 @@
               <a href="#" class="btn btn-primary">Saiba mais!</a>
             </div>
           </div>
+
+          <div class="card" style="width: 18rem">
+            <img src="../assets/foto-2.jpg" class="card-box-img" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Atividades em aula</h5>
+              <p class="card-text">Muitas brincadeiras e atividades interativas com as crianças.</p>
+              <router-link to="/Atividades" class="btn btn-primary" @click="closeSidebar"
+                >Saiba mais!</router-link
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>

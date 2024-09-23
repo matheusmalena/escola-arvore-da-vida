@@ -348,6 +348,7 @@ a {
   justify-content: center;
   align-items: center;
 }
+
 /* ============= ABOUT SECTION/ALL SIMILIAR STYLING ============= */
 section {
   padding: 100px 0;
@@ -419,14 +420,26 @@ section .title::after {
 }
 
 
-.turmas span, .services span, .proposta-card h2 span, .instagram span, .structure span, .material span, .material-didatico span{
+.turmas span,
+.services span,
+.proposta-card h2 span,
+.instagram span,
+.structure span,
+.material span,
+.material-didatico span {
   color: var(--orange);
   font-family: var(--baloo);
   font-weight: 800;
   font-size: 42px;
 }
 
-.turmas h1, .services h2, .proposta-card h2, .instagram h2, .structure h2, .material h2, .material-didatico h2 {
+.turmas h1,
+.services h2,
+.proposta-card h2,
+.instagram h2,
+.structure h2,
+.material h2,
+.material-didatico h2 {
   color: #2c3e50;
 }
 
@@ -611,7 +624,7 @@ span {
   background: var(--light-green);
 }
 
-.proposta{
+.proposta {
   background-color: var(--clean-light-gray);
   display: flex;
   flex-direction: column;
@@ -694,7 +707,8 @@ span {
   height: auto;
   max-height: 390px;
   object-fit: cover;
-  border-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .btn-primary {
@@ -1068,7 +1082,7 @@ span {
   font-family: 'poppins', sans-serif;
 }
 
-.content-maps{
+.content-maps {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1076,7 +1090,7 @@ span {
   flex-direction: column;
 }
 
-.content-maps iframe{
+.content-maps iframe {
   width: 100%;
   height: 500px;
 }
@@ -1302,7 +1316,7 @@ footer img {
   color: var(--orange);
 }
 
-.content-footer{
+.content-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -1310,7 +1324,7 @@ footer img {
 }
 
 .responsive-icons {
- display: none;
+  display: none;
 }
 
 .material {

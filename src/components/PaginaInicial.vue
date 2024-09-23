@@ -156,7 +156,7 @@
           </div>
 
           <div class="card" style="width: 18rem">
-            <img src="../assets/tinta.jpg" class="card-box-img" alt="..." />
+            <img src="../assets/passeio.jpg" class="card-box-img" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Passeios e visitações</h5>
               <p class="card-text">Descubra o mundo, uma aventura por vez.</p>
@@ -174,7 +174,7 @@
           </div>
 
           <div class="card" style="width: 18rem">
-            <img src="../assets/foto-2.jpg" class="card-box-img" alt="..." />
+            <img src="../assets/transito.jpg" class="card-box-img" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Atividades em aula</h5>
               <p class="card-text">Muitas brincadeiras e atividades interativas com as crianças.</p>

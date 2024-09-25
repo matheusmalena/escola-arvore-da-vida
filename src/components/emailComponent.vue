@@ -92,5 +92,10 @@
   </script>
   
   <style>
- 
+  .icons-forms {
+  transition: transform 0.3s ease;
+  }
+ .icons-forms:hover {
+  transform: translateY(-10px);
+}
   </style>

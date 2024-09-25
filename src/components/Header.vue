@@ -32,7 +32,8 @@
           </ul>
         </li>
         <li>
-          <a href="/#services" @click="handleMenuClick">Atividades</a>
+          <router-link to="/Atividades" class="" @click="handleMenuClick"
+                >Atividades</router-link>
         </li>
         <li><a href="/#about" @click="handleMenuClick">Sobre Nós</a></li>
         <li><a href="/#structure" @click="handleMenuClick">Estrutura</a></li>

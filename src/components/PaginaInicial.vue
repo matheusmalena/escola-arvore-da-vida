@@ -133,7 +133,9 @@
             <div class="card-body">
               <h5 class="card-title">Ballet</h5>
               <p class="card-text">Desenvolvendo a graça e a disciplina em cada passo.</p>
-              <a href="#" class="btn btn-primary">Saiba mais!</a>
+              <router-link to="/Atividades" class="btn btn-primary" @click="closeSidebar"
+                >Saiba mais!</router-link
+              >
             </div>
           </div>
 
@@ -142,7 +144,9 @@
             <div class="card-body">
               <h5 class="card-title">Judo</h5>
               <p class="card-text">Poder e equilíbrio: onde a força encontra a mente.</p>
-              <a href="#" class="btn btn-primary">Saiba mais!</a>
+              <router-link to="/Atividades" class="btn btn-primary" @click="closeSidebar"
+                >Saiba mais!</router-link
+              >
             </div>
           </div>
 
@@ -151,7 +155,9 @@
             <div class="card-body">
               <h5 class="card-title">Futebol</h5>
               <p class="card-text">Transformando paixão em técnica e jogo coletivo</p>
-              <a href="#" class="btn btn-primary">Saiba mais!</a>
+              <router-link to="/Atividades" class="btn btn-primary" @click="closeSidebar"
+                >Saiba mais!</router-link
+              >
             </div>
           </div>
 
@@ -160,23 +166,27 @@
             <div class="card-body">
               <h5 class="card-title">Passeios e visitações</h5>
               <p class="card-text">Descubra o mundo, uma aventura por vez.</p>
-              <a href="#" class="btn btn-primary">Saiba mais!</a>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem">
-            <img src="../assets/foto-2.jpg" class="card-box-img" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Festas temáticas</h5>
-              <p class="card-text">Momentos inesquecíveis, diversão garantida.</p>
-              <a href="#" class="btn btn-primary">Saiba mais!</a>
+              <router-link to="/Atividades" class="btn btn-primary" @click="closeSidebar"
+                >Saiba mais!</router-link
+              >
             </div>
           </div>
 
           <div class="card" style="width: 18rem">
             <img src="../assets/transito.jpg" class="card-box-img" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Atividades em aula</h5>
+              <h5 class="card-title">Festas temáticas</h5>
+              <p class="card-text">Momentos inesquecíveis, diversão garantida.</p>
+              <router-link to="/Atividades" class="btn btn-primary" @click="closeSidebar"
+                >Saiba mais!</router-link
+              >
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img src="../assets/atv-pintura.jpeg" class="card-box-img" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Extra Especiais</h5>
               <p class="card-text">Muitas brincadeiras e atividades interativas com as crianças.</p>
               <router-link to="/Atividades" class="btn btn-primary" @click="closeSidebar"
                 >Saiba mais!</router-link

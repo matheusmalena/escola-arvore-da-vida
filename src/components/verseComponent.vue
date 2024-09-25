@@ -10,7 +10,7 @@
             <span class="versicule">João 8:32 </span>
         </div>
         <div class="verse-02">
-            <img src="../assets/sistema-mk-sem-fundo.png" alt="">
+            <img src="../assets/logo-mkz-oficial.png" alt="">
         </div>
       </div>
     </section>

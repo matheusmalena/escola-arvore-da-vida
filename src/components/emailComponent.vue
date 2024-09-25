@@ -8,7 +8,7 @@
       <div class="max-width">
         <div class="contact-content">
           <div class="column left content-maps" data-aos="fade-down">
-            <div class="text">Se Interessou?</div>
+            <div class="text">Interessou?</div>
 
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29085.63039976201!2d-47.03874462568358!3d-24.3219648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d02674d0188d1b%3A0x1cce5688ad766a40!2sCentro%20Educacional%20%C3%81rvore%20da%20Vida%20-%20Peru%C3%ADbe!5e0!3m2!1spt-BR!2sbr!4v1720744547478!5m2!1spt-BR!2sbr"

@@ -443,6 +443,10 @@ section .title::after {
   color: #2c3e50;
 }
 
+.structure {
+  padding: 0 !important;
+}
+
 .container-turmas {
   display: flex;
   flex-direction: row;
@@ -667,7 +671,7 @@ span {
 }
 
 .services .serv-content .card {
-  flex: 1 1 calc(33% - 20px);
+  flex: 1 1 calc(28% - 20px);
   background: var(--clean-white-purple);
   text-align: center;
   cursor: pointer;

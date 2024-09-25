@@ -8,7 +8,7 @@
       <div class="card-text-turmas">
         <h2>Aulas de futebol</h2>
         <p>Trabalhando em equipe, estratégia e diversão.</p>
-        <a href="https://wa.me/5511972216682" target="_blank" ><button class="btn-agendar"> Agende uma visita <font-awesome-icon :icon="['fab', 'whatsapp']" /></button></a>
+        <a href="https://wa.me/5511972216682" target="_blank" ><button class="btn-agendar"> Conheça mais sobre nossa escola <font-awesome-icon :icon="['fab', 'whatsapp']" /></button></a>
       </div>
     </section>
 
@@ -16,7 +16,7 @@
       <div class="card-text-turmas">
         <h2>Aulas de Ballet</h2>
         <p>Dançando com o coração, construindo sonhos com os pés.</p>
-        <a href="https://wa.me/5511972216682" target="_blank" ><button class="btn-agendar"> Agende uma visita <font-awesome-icon :icon="['fab', 'whatsapp']" /></button></a>
+        <a href="https://wa.me/5511972216682" target="_blank" ><button class="btn-agendar"> Conheça mais sobre nossa escola <font-awesome-icon :icon="['fab', 'whatsapp']" /></button></a>
       </div>
       <div class="card-img-turmas">
         <img src="../assets/ballet-sem-fundo.png" alt="">
@@ -30,7 +30,7 @@
       <div class="card-text-turmas">
         <h2>Aulas de Judô</h2>
         <p>Aprendendo a arte do Judô com técnica e respeito.</p>
-        <a href="https://wa.me/5511972216682" target="_blank" ><button class="btn-agendar"> Agende uma visita <font-awesome-icon :icon="['fab', 'whatsapp']" /></button></a>
+        <a href="https://wa.me/5511972216682" target="_blank" ><button class="btn-agendar"> Conheça mais sobre nossa escola <font-awesome-icon :icon="['fab', 'whatsapp']" /></button></a>
       </div>
     </section>
   

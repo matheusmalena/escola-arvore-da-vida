@@ -242,8 +242,8 @@ html {
 }
 
 .botao-entrar-em-contato:hover {
-  background-color: #ffffffc9;
-  border: 1px solid #ffffffc9;
+  
+  
   border-radius: 6rem;
   padding: 0.8rem;
   display: flex;

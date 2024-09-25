@@ -3,30 +3,33 @@
   
     <section class="section card-component-turmas">
       <div class="card-img-turmas">
-        <img src="../assets/baby-tinta.jpeg" alt="">
+        <img src="../assets/futebol-sem-fundo.png" alt="">
       </div>
       <div class="card-text-turmas">
-        <h2>Dia de cozinhar</h2>
+        <h2>Aulas de futebol</h2>
+        <p>Trabalhando em equipe, estratégia e diversão.</p>
         <a href="https://wa.me/5511972216682" target="_blank" ><button class="btn-agendar"> Agende uma visita <font-awesome-icon :icon="['fab', 'whatsapp']" /></button></a>
       </div>
     </section>
 
-    <section class="section card-component-turmas">
+    <section class="section card-component-turmas ballet-cell">
       <div class="card-text-turmas">
-        <h2>Dia de cozinhar</h2>
+        <h2>Aulas de Ballet</h2>
+        <p>Dançando com o coração, construindo sonhos com os pés.</p>
         <a href="https://wa.me/5511972216682" target="_blank" ><button class="btn-agendar"> Agende uma visita <font-awesome-icon :icon="['fab', 'whatsapp']" /></button></a>
       </div>
       <div class="card-img-turmas">
-        <img src="../assets/dupla-estudando02.jpeg" alt="">
+        <img src="../assets/ballet-sem-fundo.png" alt="">
       </div>
     </section>
 
     <section class="section card-component-turmas">
       <div class="card-img-turmas">
-        <img src="../assets/baby-tinta.jpeg" alt="">
+        <img src="../assets/judo-sem-fundo.png" alt="">
       </div>
       <div class="card-text-turmas">
-        <h2>Dia de cozinhar</h2>
+        <h2>Aulas de Judô</h2>
+        <p>Aprendendo a arte do Judô com técnica e respeito.</p>
         <a href="https://wa.me/5511972216682" target="_blank" ><button class="btn-agendar"> Agende uma visita <font-awesome-icon :icon="['fab', 'whatsapp']" /></button></a>
       </div>
     </section>
@@ -99,8 +102,9 @@
         </section>
       </div>
     </section> -->
-  
+  <div class="card-email" >
     <EmailComponent />
+  </div>
   </template>
   
   <script>
@@ -179,6 +183,10 @@
     width: 80%;
     gap: 1rem;
   }
+
+  .card-email {
+    padding: 3rem 0;
+  }
   
   .bilingue-first {
     display: flex;
@@ -207,6 +215,10 @@
     font-size: 1.2rem;
     line-height: 1.6;
   }
+
+  .section {
+    padding: 20px !important;
+  }
   
   .card-material-fundamental {
     display: flex;
@@ -232,6 +244,11 @@
     justify-content: center;
     align-items: center;
     padding: 3rem 0;
+    border: none !important;
+  }
+
+  .card-img-turmas img {
+    border: none !important;
   }
   
   .card-swiper-slide {
@@ -423,6 +440,14 @@
   
   .swiper-pagination-bullet-active {
     background-color: red; /* Cor do bullet ativo */
+  }
+
+  .card-img-turmas {
+    padding: 0 !important;
+  }
+
+  .ballet-cell {
+    flex-direction: column-reverse !important;
   }
   }
   </style>
